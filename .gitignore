@@ -11,3 +11,5 @@ zwscene.xml
 .idea/
 add_confs/shell_commands/__pycache__/
 secrets.yaml
+options.xml
+
