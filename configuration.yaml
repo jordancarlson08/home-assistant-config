@@ -58,5 +58,5 @@ mqtt:
   broker: 192.168.0.108
   port: 1883
   client_id: homeassistant
-  username: !secrets mqtt_user
-  password: !secrets mqtt_password
+  username: !secret mqtt_user
+  password: !secret mqtt_password
