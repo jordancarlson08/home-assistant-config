@@ -98,7 +98,7 @@ sensor:
     unit_of_measurement: "°F"  
     value_template: '{{ value_json.temperature | round(1) }}'  
 
- - platform: mqtt
+  - platform: mqtt
     state_topic: "multi/node1"
     name: "SN1 Real Feel"
     unit_of_measurement: "°F"
