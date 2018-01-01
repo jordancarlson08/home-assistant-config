@@ -38,8 +38,6 @@ history:
 logbook:
 map:
 sun:
-sensor:
-  - platform: yr
 
 tts:
   - platform: google
@@ -74,7 +72,8 @@ light:
     qos: 0  
   
   
-sensor:  
+sensor:
+  - platform: yr
   - platform: mqtt  
     state_topic: "multi/node1"  
     name: "SN1 Humidity"  
