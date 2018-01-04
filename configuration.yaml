@@ -100,8 +100,9 @@ group:
   multisensor_1_card:  
     name: Multisensor  
     entities:  
-      - sensor.temperature  
-      - sensor.humidity 
+      - sensor.temperature
+      - sensor.feels_like
+      - sensor.humidity
       - sensor.pir  
       - light.led
 
