@@ -97,12 +97,20 @@ sensor:
     value_template: '{{ value_json.humidity | round(0) }}'
   
 group:
+  default_view:
+    view: yes
+    name: Home
+    entities:
+      - group.master
+      - group.multisensor_1
+
   master:
     name: Master Bedroom
     entities:
       - switch.master_light_switch
       - light.master_dimmer_level
-  multisensor_1_card:  
+      
+  multisensor_1:  
     name: Multisensor  
     entities:  
       - sensor.temperature
