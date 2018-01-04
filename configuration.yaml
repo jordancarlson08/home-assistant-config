@@ -37,7 +37,6 @@ recorder:
 history:
 logbook:
 map:
-sun:
 
 tts:
   - platform: google
@@ -73,36 +72,29 @@ light:
   
   
 sensor:
-  - platform: yr
-  - platform: mqtt  
-    state_topic: "multi/node1"  
-    name: "SN1 Humidity"  
-    unit_of_measurement: "%"  
-    value_template: '{{ value_json.humidity | round(1) }}'  
   
   - platform: mqtt  
     state_topic: "multi/node1"  
-    name: "SN1 LDR"
-    ##This sensor is not calibrated to actual LUX. Rather, this a map of the input voltage ranging from 0 - 1023.
-    unit_of_measurement: "LUX"  
-    value_template: '{{ value_json.ldr }}'  
-  
-  - platform: mqtt  
-    state_topic: "multi/node1"  
-    name: "SN1 PIR"  
+    name: "PIR"  
     value_template: '{{ value_json.motion }}'  
-  
+
   - platform: mqtt  
     state_topic: "multi/node1"  
-    name: "SN1 Temperature"  
+    name: "Temperature"  
     unit_of_measurement: "°F"  
-    value_template: '{{ value_json.temperature | round(1) }}'  
+    value_template: '{{ value_json.temperature | round(1) }}'
 
   - platform: mqtt
     state_topic: "multi/node1"
-    name: "SN1 Real Feel"
+    name: "Feels Like"
     unit_of_measurement: "°F"
-    value_template: '{{ value_json.heatIndex | round(1) }}'
+    value_template: '{{ value_json.heatIndex | round(0) }}'
+
+  - platform: mqtt  
+    state_topic: "multi/node1"  
+    name: "Humidity"  
+    unit_of_measurement: "%"  
+    value_template: '{{ value_json.humidity | round(0) }}'
   
   
 # group:  
