@@ -8,7 +8,7 @@ homeassistant:
 
   customize: !include customize.yaml
 
-group: !include groups.yaml
+# group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
 
@@ -61,7 +61,7 @@ mqtt:
 
 light:  
   - platform: mqtt_json  
-    name: "SN1 LED"  
+    name: "LED"  
     state_topic: "multi/node1"  
     command_topic: "multi/node1/set"  
     brightness: true  
@@ -97,15 +97,14 @@ sensor:
     value_template: '{{ value_json.humidity | round(0) }}'
   
   
-# group:  
-#   sensor_node_1_card:  
-#     name: Sensor Node 1  
-#     entities:  
-#       - sensor.sn1_temperature  
-#       - sensor.sn1_humidity  
-#       - sensor.sn1_ldr  
-#       - sensor.sn1_pir  
-#       - light.sn1_led
+group:  
+  multisensor_1_card:  
+    name: Multisensor  
+    entities:  
+      - sensor.temperature  
+      - sensor.humidity 
+      - sensor.pir  
+      - light.led
 
 
 
