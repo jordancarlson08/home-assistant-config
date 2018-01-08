@@ -52,7 +52,7 @@ camera:
     password: my_password_123
 
 mqtt:
-  broker: 192.168.0.108
+  broker: 192.168.1.244
   port: 1883
   client_id: homeassistant
   username: !secret mqtt_user
@@ -109,7 +109,7 @@ group:
     entities:
       - switch.master_light_switch
       - light.master_dimmer_level
-      
+
   multisensor_1:  
     name: Multisensor  
     entities:  
