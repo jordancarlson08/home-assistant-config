@@ -52,7 +52,7 @@ camera:
     password: my_password_123
 
 mqtt:
-  broker: 192.168.1.108
+  broker: 192.168.0.108
   port: 1883
   client_id: homeassistant
   username: !secret mqtt_user
