@@ -45,14 +45,14 @@ zwave:
   usb_path: /dev/serial/by-id/usb-0658_0200-if00
   # polling_interval: 30000
 
-camera:
-  - platform: yi
-    name: Camera
-    host: '192.168.0.95'
-    password: my_password_123
+# camera:
+#   - platform: yi
+#     name: Camera
+#     host: '192.168.0.95'
+#     password: my_password_123
 
 mqtt:
-  broker: 192.168.0.108
+  broker: 192.168.0.100
   port: 1883
   client_id: homeassistant
   username: !secret mqtt_user
