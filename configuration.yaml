@@ -96,28 +96,28 @@ sensor:
     unit_of_measurement: "%"  
     value_template: '{{ value_json.humidity | round(0) }}'
   
-group:
-  default_view:
-    view: yes
-    name: Home
-    entities:
-      - group.master
-      - group.multisensor_1
+# group:
+#   default_view:
+#     view: yes
+#     name: Home
+#     entities:
+#       - group.master
+#       - group.multisensor_1
 
-  master:
-    name: Master Bedroom
-    entities:
-      - switch.master_light_switch
-      - light.master_dimmer_level
+#   master:
+#     name: Master Bedroom
+#     entities:
+#       - switch.master_light_switch
+#       - light.master_dimmer_level
 
-  multisensor_1:  
-    name: Multisensor  
-    entities:  
-      - sensor.temperature
-      - sensor.feels_like
-      - sensor.humidity
-      - sensor.pir  
-      - light.led
+#   multisensor_1:  
+#     name: Multisensor  
+#     entities:  
+#       - sensor.temperature
+#       - sensor.feels_like
+#       - sensor.humidity
+#       - sensor.pir  
+#       - light.led
 
 
 
