@@ -17,9 +17,11 @@ config:
 
 http:
   api_password: !secret http_password
-  ssl_certificate: /home/homeassistant/dehydrated/certs/jordancarlson.duckdns.org/fullchain.pem
-  ssl_key: /home/homeassistant/dehydrated/certs/jordancarlson.duckdns.org/privkey.pem
-  base_url: jordancarlson.duckdns.org:443
+  ssl_certificate: /etc/letsencrypt/live/home.jordancarlson.me/fullchain.pem
+  ssl_key: /etc/letsencrypt/live/home.jordancarlson.me/privkey.pem
+  # ssl_certificate: /home/homeassistant/dehydrated/certs/jordancarlson.duckdns.org/fullchain.pem
+  # ssl_key: /home/homeassistant/dehydrated/certs/jordancarlson.duckdns.org/privkey.pem
+  base_url: home.jordancarlson.me
 
 updater:
 discovery:
