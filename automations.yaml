@@ -23,11 +23,13 @@
   action:
     - service: switch.turn_off
       data:
-        entity_id: switch.master_light_switch
-    - service: light.turn_off
+        entity_id: switch.master_bathroom_switch
+    - service: switch.turn_off
       data:
-        entity_id: light.master_dimmer_level
-
+        entity_id: switch.master_shower_switch
+    - service: switch.turn_off
+      data:
+        entity_id: switch.master_toilet_switch
 
 - alias: 'Triple Tap Up'
   trigger:
