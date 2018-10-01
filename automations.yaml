@@ -8,10 +8,7 @@
   action:
     - service: switch.turn_on
       data:
-        entity_id: switch.master_light_switch
-    - service: light.turn_on
-      data:
-        entity_id: light.master_dimmer_level
+        entity_id: switch.master_toilet_switch
 
 - alias: 'Double Tap Down'
   trigger:
@@ -39,9 +36,16 @@
       scene_id: 1
       scene_data: 4
   action:
-    - service: light.turn_on
+  action:
+    - service: switch.turn_on
       data:
-        entity_id: light.master_dimmer_level
+        entity_id: switch.master_bathroom_switch
+    - service: switch.turn_on
+      data:
+        entity_id: switch.master_shower_switch
+    - service: switch.turn_on
+      data:
+        entity_id: switch.master_toilet_switch
 
 - alias: 'Triple Tap Down'
   trigger:
@@ -51,6 +55,19 @@
       scene_id: 2
       scene_data: 4
   action:
-    - service: light.turn_off
+    - service: switch.turn_off
       data:
-        entity_id: light.master_dimmer_level
+        entity_id: switch.master_bathroom_switch
+    - service: switch.turn_on
+      data:
+        entity_id: switch.master_shower_switch
+    - service: switch.turn_off
+      data:
+        entity_id: switch.master_toilet_switch
+    - service: switch.turn_off
+      data:
+        entity_id: switch.master_bedroom_switch
+    - service: fan.turn_on
+      data:
+        entity_id: fan.master_fan
+        speed: medium
