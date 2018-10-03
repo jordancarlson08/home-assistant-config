@@ -36,7 +36,6 @@
       scene_id: 1
       scene_data: 4
   action:
-  action:
     - service: switch.turn_on
       data:
         entity_id: switch.master_bathroom_switch

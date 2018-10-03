@@ -118,28 +118,30 @@ sensor:
       - type: load_5m
       - type: load_15m
   
-# group:
-#   default_view:
-#     view: yes
-#     name: Home
-#     entities:
-#       - group.master
-#       - group.multisensor_1
-
-#   master:
-#     name: Master Bedroom
-#     entities:
-#       - switch.master_light_switch
-#       - light.master_dimmer_level
-
-#   multisensor_1:  
-#     name: Multisensor  
-#     entities:  
-#       - sensor.temperature
-#       - sensor.feels_like
-#       - sensor.humidity
-#       - sensor.pir  
-#       - light.led
+group:
+  carlson:
+    view: yes
+    name: Carlson
+    entities:
+      - group.master
+      - group.multisensor_1
+      - group.system
+  master:
+    name: Master Bedroom
+    entities:
+      - switch.master_bedroom_switch
+      - fan.master_fan
+      - switch.master_bathroom_switch
+      - switch.master_shower_switch
+      - switch.master_toilet_switch
+  multisensor_1:  
+    name: Multisensor  
+    entities:  
+      - sensor.temperature
+      - sensor.feels_like
+      - sensor.humidity
+      - sensor.pir  
+      - light.led
 
 
 
