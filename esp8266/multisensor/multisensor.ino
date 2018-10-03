@@ -33,6 +33,7 @@
 #include <PubSubClient.h>
 #include <ESP8266mDNS.h>
 #include <WiFiUdp.h>
+#include <WiFiManager.h>
 #include <ArduinoOTA.h>
 #include <ArduinoJson.h>
 #include <string.h>
@@ -40,10 +41,10 @@
 
 
 /************ WIFI and MQTT INFORMATION (CHANGE THESE FOR YOUR SETUP) ******************/
-#define wifi_ssid "JAMILY" //type your WIFI information inside the quotes
-#define wifi_password "chatbooks123"
+//#define wifi_ssid "JAMILY" //type your WIFI information inside the quotes
+//#define wifi_password "chatbooks123"
 
-#define mqtt_server "ras.jordancarlson.me"
+#define mqtt_server "home.jordancarlson.me"
 #define mqtt_user "admin" 
 #define mqtt_password "63sB2O8DKJmLWNRBqmQX"
 #define mqtt_port 1883
@@ -204,23 +205,26 @@ void setup() {
 /********************************** START SETUP WIFI*****************************************/
 void setup_wifi() {
 
-  delay(10);
-  Serial.println();
-  Serial.print("Connecting to ");
-  Serial.println(wifi_ssid);
+  WiFiManager wifiManager;
+  wifiManager.autoConnect("MultiSensorSetupAP", "multisensor");
 
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(wifi_ssid, wifi_password);
-
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-
-  Serial.println("");
-  Serial.println("WiFi connected");
-  Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());
+//  delay(10);
+//  Serial.println();
+//  Serial.print("Connecting to ");
+//  Serial.println(wifi_ssid);
+//
+//  WiFi.mode(WIFI_STA);
+//  WiFi.begin(wifi_ssid, wifi_password);
+//
+//  while (WiFi.status() != WL_CONNECTED) {
+//    delay(500);
+//    Serial.print(".");
+//  }
+//
+//  Serial.println("");
+//  Serial.println("WiFi connected");
+//  Serial.println("IP address: ");
+//  Serial.println(WiFi.localIP());
 }
 
 

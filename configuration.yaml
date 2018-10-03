@@ -79,8 +79,11 @@ light:
     flash: true  
     rgb: true  
     optimistic: false  
-    qos: 0  
-  
+    qos: 0
+
+switch:
+  - platform: wake_on_lan
+    mac_address: "44-85-00-58-27-4E"
   
 sensor:
   
