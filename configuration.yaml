@@ -102,6 +102,11 @@ switch:
     mac_address: "44-85-00-58-27-4E"
   
 sensor:
+
+  - platform: command_line
+    name: Dexcom last value
+    command: python3 ~/.homeassistant/scripts/dexcom.py
+    scan_interval: 43200
   
   - platform: mqtt  
     state_topic: "multi/node1"  
