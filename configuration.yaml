@@ -106,6 +106,7 @@ sensor:
   - platform: command_line
     name: Dexcom
     command: python3 ~/.homeassistant/scripts/dexcom.py
+    scan_interval: 300
   
   - platform: mqtt  
     state_topic: "multi/node1"  
