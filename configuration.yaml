@@ -104,7 +104,7 @@ switch:
 sensor:
 
   - platform: command_line
-    name: Dexcom last value
+    name: Dexcom
     command: python3 ~/.homeassistant/scripts/dexcom.py
   
   - platform: mqtt  
