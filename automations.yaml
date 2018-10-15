@@ -1,4 +1,4 @@
-- alias: 'Double Tap Up'
+- alias: Double Tap Up
   trigger:
     platform: event
     event_type: zwave.scene_activated
@@ -6,11 +6,11 @@
       scene_id: 1
       scene_data: 3
   action:
-    - service: switch.turn_on
-      data:
-        entity_id: switch.master_toilet_switch
-
-- alias: 'Double Tap Down'
+  - service: switch.turn_on
+    data:
+      entity_id: switch.master_toilet_switch
+  id: 2f922ecc5092440e8d0d964d2a96e9a0
+- alias: Double Tap Down
   trigger:
     platform: event
     event_type: zwave.scene_activated
@@ -18,17 +18,17 @@
       scene_id: 2
       scene_data: 3
   action:
-    - service: switch.turn_off
-      data:
-        entity_id: switch.master_bathroom_switch
-    - service: switch.turn_off
-      data:
-        entity_id: switch.master_shower_switch
-    - service: switch.turn_off
-      data:
-        entity_id: switch.master_toilet_switch
-
-- alias: 'Triple Tap Up'
+  - service: switch.turn_off
+    data:
+      entity_id: switch.master_bathroom_switch
+  - service: switch.turn_off
+    data:
+      entity_id: switch.master_shower_switch
+  - service: switch.turn_off
+    data:
+      entity_id: switch.master_toilet_switch
+  id: ba951983d408428fb0aeb1d1538b0eb2
+- alias: Triple Tap Up
   trigger:
     platform: event
     event_type: zwave.scene_activated
@@ -36,17 +36,17 @@
       scene_id: 1
       scene_data: 4
   action:
-    - service: switch.turn_on
-      data:
-        entity_id: switch.master_bathroom_switch
-    - service: switch.turn_on
-      data:
-        entity_id: switch.master_shower_switch
-    - service: switch.turn_on
-      data:
-        entity_id: switch.master_toilet_switch
-
-- alias: 'Triple Tap Down'
+  - service: switch.turn_on
+    data:
+      entity_id: switch.master_bathroom_switch
+  - service: switch.turn_on
+    data:
+      entity_id: switch.master_shower_switch
+  - service: switch.turn_on
+    data:
+      entity_id: switch.master_toilet_switch
+  id: 2ae24c18be6346f19c2606c63ad3a6f5
+- alias: Triple Tap Down
   trigger:
     platform: event
     event_type: zwave.scene_activated
@@ -54,19 +54,56 @@
       scene_id: 2
       scene_data: 4
   action:
-    - service: switch.turn_off
-      data:
-        entity_id: switch.master_bathroom_switch
-    - service: switch.turn_on
-      data:
-        entity_id: switch.master_shower_switch
-    - service: switch.turn_off
-      data:
-        entity_id: switch.master_toilet_switch
-    - service: switch.turn_off
-      data:
-        entity_id: switch.master_bedroom_switch
-    - service: fan.turn_on
-      data:
-        entity_id: fan.master_fan
-        speed: medium
+  - service: switch.turn_off
+    data:
+      entity_id: switch.master_bathroom_switch
+  - service: switch.turn_on
+    data:
+      entity_id: switch.master_shower_switch
+  - service: switch.turn_off
+    data:
+      entity_id: switch.master_toilet_switch
+  - service: switch.turn_off
+    data:
+      entity_id: switch.master_bedroom_switch
+  - service: fan.turn_on
+    data:
+      entity_id: fan.master_fan
+      speed: medium
+  id: d150ff7da1f24498ad653c2941d7c7a8
+- id: '1538848400790'
+  alias: Motion light
+  trigger:
+  - entity_id: sensor.pir
+    from: standby
+    platform: state
+    to: motion detected
+  condition: []
+  action:
+  - data:
+      entity_id: switch.ge_12720_outdoor_smart_switch_switch
+    service: switch.turn_on
+  - delay: 00:00:05
+  - data:
+      entity_id: switch.ge_12720_outdoor_smart_switch_switch
+    service: switch.turn_off
+- id: '1539457532853'
+  alias: Heating Pad Off
+  trigger:
+  - at: 08:00:00
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: switch.outdoor_switch
+    service: switch.turn_off
+- id: '1539457575443'
+  alias: Heating Pad On
+  trigger:
+  - at: '21:00:00'
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: switch.outdoor_switch
+    service: switch.turn_on

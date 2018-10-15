@@ -1,0 +1,116 @@
+{
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "596ab48fe54b4ce8b09ad68d8ecc712b",
+                "identifiers": [
+                    [
+                        "cast",
+                        "22cf3e50ffcbcab591f3e2b49e2c75e4"
+                    ]
+                ],
+                "manufacturer": "NVIDIA",
+                "model": "SHIELD Android TV",
+                "name": "SHIELD",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "545619e2b6c4430e846f523de8905884",
+                "identifiers": [
+                    [
+                        "cast",
+                        "ea824d7a4b47c38b22dec305131f6090"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home",
+                "name": "Kitchen Speaker",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "3797c9d88e5e46c689e58c97123c291f",
+                "identifiers": [
+                    [
+                        "cast",
+                        "362a7779f582d3f5ae65723cbf22e42f"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Mini",
+                "name": "Loft Wall",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "201c528d1db3463c80f615fce60b299f",
+                "identifiers": [
+                    [
+                        "cast",
+                        "306b413272a8f1d16fb3129a16d94157"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home",
+                "name": "Entryway Speaker",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "473dc9d8735f45f08842eb409c9f6d51",
+                "identifiers": [
+                    [
+                        "cast",
+                        "40749a32bf1ec1578cd34435410f9a9e"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Mini",
+                "name": "Loft Speaker",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "a48f011a87ee4b3baabaf18cca46faee",
+                "identifiers": [
+                    [
+                        "cast",
+                        "c379b5d8427c079605dfb4361ea5c1cc"
+                    ]
+                ],
+                "manufacturer": "VIZIO",
+                "model": "SmartCast Sound Bar 4051-D5",
+                "name": "Soundbar",
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}

@@ -1,0 +1,269 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw090_zstick_gen5_us",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.master_dimmer",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-2"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.master_dimmer_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076299265"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.master_light",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-3"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw089_recessed_door_sensor_gen5",
+                "name": "Front Door",
+                "platform": "zwave",
+                "unique_id": "node-4"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.aeotec_zw089_recessed_door_sensor_gen5_sensor",
+                "name": "Door",
+                "platform": "zwave",
+                "unique_id": "4-72057594110017536"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.aeotec_zw089_recessed_door_sensor_gen5_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-5"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.aeotec_zw089_recessed_door_sensor_gen5_sensor_2",
+                "name": "Front Door",
+                "platform": "zwave",
+                "unique_id": "5-72057594126794752"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.master_bathroom_switch",
+                "name": "Master Bathroom",
+                "platform": "zwave",
+                "unique_id": "3-72057594093060096"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_12722_onoff_relay_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-6"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_12730_fan_control_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-7"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_12722_onoff_relay_switch_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_12722_onoff_relay_switch_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-9"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.master_toilet_switch",
+                "name": "Master Toilet",
+                "platform": "zwave",
+                "unique_id": "9-72057594193723392"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.master_shower_switch",
+                "name": "Master Shower",
+                "platform": "zwave",
+                "unique_id": "8-72057594176946176"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.master_bedroom_switch",
+                "name": "Master Bedroom",
+                "platform": "zwave",
+                "unique_id": "6-72057594143391744"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.master_bedroom_fan",
+                "name": "Master Fan",
+                "platform": "zwave",
+                "unique_id": "7-72057594160185345"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "fan.master_fan",
+                "name": "Master Fan",
+                "platform": "zwave",
+                "unique_id": "7-72057594160185345"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.ge_12720_outdoor_smart_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-10"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "596ab48fe54b4ce8b09ad68d8ecc712b",
+                "disabled_by": null,
+                "entity_id": "media_player.shield",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "22cf3e50-ffcb-cab5-91f3-e2b49e2c75e4"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "545619e2b6c4430e846f523de8905884",
+                "disabled_by": null,
+                "entity_id": "media_player.kitchen_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "ea824d7a-4b47-c38b-22de-c305131f6090"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.home_only",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "10c2320c-05f2-4f21-80c2-44ad725c0bce"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.home_group",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "ea9ad5d6-f509-4cc9-bf18-7f786f8a28fb"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "3797c9d88e5e46c689e58c97123c291f",
+                "disabled_by": null,
+                "entity_id": "media_player.loft_wall",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "362a7779-f582-d3f5-ae65-723cbf22e42f"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "201c528d1db3463c80f615fce60b299f",
+                "disabled_by": null,
+                "entity_id": "media_player.entryway_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "306b4132-72a8-f1d1-6fb3-129a16d94157"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "473dc9d8735f45f08842eb409c9f6d51",
+                "disabled_by": null,
+                "entity_id": "media_player.loft_speaker",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "40749a32-bf1e-c157-8cd3-4435410f9a9e"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "a48f011a87ee4b3baabaf18cca46faee",
+                "disabled_by": null,
+                "entity_id": "media_player.soundbar",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "c379b5d8-427c-0796-05df-b4361ea5c1cc"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "cover.garage_door",
+                "name": "Garage Door",
+                "platform": "myq",
+                "unique_id": 6502405
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "switch.outdoor_switch",
+                "name": "Heating Pad",
+                "platform": "zwave",
+                "unique_id": "10-72057594210500608"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}
