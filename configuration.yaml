@@ -103,6 +103,7 @@ sensor:
   - platform: command_line
     name: Dexcom
     command: python3 ~/.homeassistant/scripts/dexcom.py
+    unit_of_measurement: mg/dL
     scan_interval: 300
   
   - platform: mqtt  
