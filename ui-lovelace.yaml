@@ -1,63 +1,118 @@
-title: My Awesome Home
-# Include external resources
-resources:
-  - url: /local/my-custom-card.js
-    type: js
-  - url: /local/my-webfont.css
-    type: css
-
-# Optional background for all views. Check https://developer.mozilla.org/en-US/docs/Web/CSS/background for more examples.
-background: center / cover no-repeat url("/background.png") fixed
-# Exclude entities from "Unused entities" view
-excluded_entities:
-  - weblink.router
+title: Carlson Home
 views:
-    # View tab title.
-  - title: Example
-    # Optional unique id for direct access /lovelace/${id}
-    id: example
-    # Optional background (overwrites the global background).
-    background: radial-gradient(crimson, skyblue)
-    # Each view can have a different theme applied. Theme should be defined in the frontend.
-    theme: dark-mode
-    # The cards to show on this view.
+  - title: Home
     cards:
-        # The filter card will filter entities for their state
-      - type: entity-filter
-        entities:
-          - device_tracker.paulus
-          - device_tracker.anne_there
-        state_filter:
-          - 'home'
-        card:
-          type: glance
-          title: People that are home
+      - type: media-control
+        entity: media_player.entryway_speaker
 
-        # The picture entity card will represent an entity with a picture
-      - type: picture-entity
-        image: https://www.home-assistant.io/images/default-social.png
-        entity: light.bed_light
+      - type: media-control
+        entity: media_player.home_group
 
-    # Specify a tab icon if you want the view tab to be an icon.
-  - icon: mdi:home-assistant
-    # Title of the view. Will be used as the tooltip for tab icon
-    title: Second view
-    cards:
-        # Entities card will take a list of entities and show their state.
+      - type: media-control
+        entity: media_player.home_only
+
+      - type: media-control
+        entity: media_player.kitchen_speaker
+
+      - type: media-control
+        entity: media_player.loft_speaker
+
+      - type: media-control
+        entity: media_player.loft_wall
+
+      - type: media-control
+        entity: media_player.shield
+
+      - type: media-control
+        entity: media_player.soundbar
+
       - type: entities
-        # Title of the entities card
-        title: Example
-        # The entities here will be shown in the same order as specified.
-        # Each entry is an entity ID or a map with extra options.
+        title: Automations
+        show_header_toggle: true
         entities:
-          - light.kitchen
-          - switch.ac
-          - entity: light.living_room
-            # Override the name to use
-            name: LR Lights
+          - automation.double_tap_down
+          - automation.double_tap_up
+          - automation.heating_pad_off
+          - automation.heating_pad_on
+          - automation.motion_light
+          - automation.triple_tap_down
+          - automation.triple_tap_up
 
-        # The markdown card will render markdown text.
-      - type: markdown
-        title: Lovelace
-        content: >
-          Welcome to your **Lovelace UI**.
+      - type: entities
+        title: Binary Sensor
+        show_header_toggle: true
+        entities:
+          - binary_sensor.aeotec_zw089_recessed_door_sensor_gen5_sensor_2
+
+      - type: entities
+        title: Cover
+        show_header_toggle: true
+        entities:
+          - cover.garage_door
+
+      - type: entities
+        title: Fan
+        show_header_toggle: true
+        entities:
+          - fan.master_fan
+
+      - type: entities
+        title: Groups
+        show_header_toggle: true
+        entities:
+          - group.all_automations
+          - group.all_covers
+          - group.all_fans
+          - group.all_lights
+          - group.all_switches
+          - group.carlson
+          - group.master
+          - group.multisensor_1
+          - group.system
+
+      - type: entities
+        title: Lights
+        show_header_toggle: true
+        entities:
+          - light.led
+          - light.master_dimmer_level
+
+      - type: entities
+        title: Sensors
+        show_header_toggle: true
+        entities:
+          - sensor.dexcom
+          - sensor.feels_like
+          - sensor.humidity
+          - sensor.load_15m
+          - sensor.load_1m
+          - sensor.load_5m
+          - sensor.memory_free
+          - sensor.pir
+          - sensor.processor_use
+          - sensor.temperature
+
+      - type: entities
+        title: Switchs
+        show_header_toggle: true
+        entities:
+          - switch.master_bathroom_switch
+          - switch.master_bedroom_switch
+          - switch.master_shower_switch
+          - switch.master_toilet_switch
+          - switch.outdoor_switch
+          - switch.wake_on_lan
+
+      - type: entities
+        title: Zwaves
+        show_header_toggle: true
+        entities:
+          - zwave.aeotec_zw089_recessed_door_sensor_gen5_2
+          - zwave.aeotec_zw090_zstick_gen5_us
+          - zwave.ge_12720_outdoor_smart_switch
+          - zwave.ge_12722_onoff_relay_switch
+          - zwave.ge_12722_onoff_relay_switch_2
+          - zwave.ge_12722_onoff_relay_switch_3
+          - zwave.ge_12730_fan_control_switch
+          - zwave.master_dimmer
+          - zwave.master_light
