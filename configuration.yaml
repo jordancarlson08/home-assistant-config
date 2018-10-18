@@ -76,8 +76,6 @@ mqtt:
 
 google_assistant:
   project_id: home-assistant-142002
-  client_id: !secret assistant_client_id
-  access_token: !secret assistant_access_token
   api_key: !secret assistant_api_key
   exposed_domains:
     - switch
