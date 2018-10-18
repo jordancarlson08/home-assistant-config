@@ -2,29 +2,38 @@ title: Carlson Home
 views:
   - title: Home
     cards:
-      - type: media-control
-        entity: media_player.entryway_speaker
+      # - type: media-control
+      #   entity: media_player.entryway_speaker
 
-      - type: media-control
-        entity: media_player.home_group
+      # - type: media-control
+      #   entity: media_player.home_group
 
-      - type: media-control
-        entity: media_player.home_only
+      # - type: media-control
+      #   entity: media_player.home_only
 
-      - type: media-control
-        entity: media_player.kitchen_speaker
+      # - type: media-control
+      #   entity: media_player.kitchen_speaker
 
-      - type: media-control
-        entity: media_player.loft_speaker
+      # - type: media-control
+      #   entity: media_player.loft_speaker
 
-      - type: media-control
-        entity: media_player.loft_wall
+      # - type: media-control
+      #   entity: media_player.loft_wall
 
-      - type: media-control
-        entity: media_player.shield
+      # - type: media-control
+      #   entity: media_player.shield
 
-      - type: media-control
-        entity: media_player.soundbar
+      # - type: media-control
+      #   entity: media_player.soundbar
+
+      - type: sensor
+        entity: sensor.dexcom
+        name: Dexcom
+        height: 400
+        accuracy: 12
+        unit: mg/dL
+        graph: line
+        icon: mdi:water
 
       - type: entities
         title: Automations
