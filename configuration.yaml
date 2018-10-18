@@ -102,7 +102,6 @@ switch:
     mac_address: "44-85-00-58-27-4E"
   
 sensor:
-
   - platform: command_line
     name: Dexcom
     command: python3 ~/.homeassistant/scripts/dexcom.py
