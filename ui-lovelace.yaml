@@ -30,7 +30,8 @@ views:
         entity: sensor.dexcom
         name: Dexcom
         height: 400
-        accuracy: 12
+        accuracy: 72
+        hours_to_show: 6
         unit: mg/dL
         graph: line
         icon: mdi:water
