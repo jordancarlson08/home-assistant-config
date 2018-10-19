@@ -61,6 +61,9 @@ cover:
     password: !secret myq_password
     type: liftmaster
 
+ecobee:
+  api_key: qzqurGeNiFoo6QpobTVScLX04P6K1w6Q 
+
 # camera:
 #   - platform: yi
 #     name: Camera
