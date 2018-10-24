@@ -70,6 +70,12 @@ ecobee:
 #     host: '192.168.0.95'
 #     password: my_password_123
 
+
+device_tracker:
+  - platform: google_maps
+    username: !secret google_maps_user
+    password: !secret google_maps_password
+
 mqtt:
   broker: 192.168.1.100
   port: 1883
