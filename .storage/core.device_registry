@@ -88,7 +88,7 @@
                 ],
                 "manufacturer": "Google Inc.",
                 "model": "Google Home Mini",
-                "name": "Loft Speaker",
+                "name": "Master Speaker",
                 "sw_version": null
             },
             {
@@ -107,6 +107,24 @@
                 "manufacturer": "VIZIO",
                 "model": "SmartCast Sound Bar 4051-D5",
                 "name": "Soundbar",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "78264efece9d42c9b0c5ad5b472ee6e0",
+                "identifiers": [
+                    [
+                        "cast",
+                        "8f8584fdd7d481c5fe3d071f7376d096"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": "AirScreen",
+                "name": "ShieldTV[Cast]",
                 "sw_version": null
             }
         ]

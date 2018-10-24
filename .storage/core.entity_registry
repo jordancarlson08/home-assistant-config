@@ -261,6 +261,15 @@
                 "name": "Heating Pad",
                 "platform": "zwave",
                 "unique_id": "10-72057594210500608"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "78264efece9d42c9b0c5ad5b472ee6e0",
+                "disabled_by": null,
+                "entity_id": "media_player.shieldtvcast",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "8f8584fd-d7d4-81c5-fe3d-071f7376d096"
             }
         ]
     },

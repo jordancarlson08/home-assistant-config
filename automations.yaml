@@ -107,3 +107,25 @@
   - data:
       entity_id: switch.outdoor_switch
     service: switch.turn_on
+- id: '1540182939039'
+  alias: Long Tap Down
+  trigger:
+  - event_data:
+      scene_data: 2
+      scene_id: 2
+    event_type: zwave.scene_activated
+    platform: event
+  condition: []
+  action:
+  - data:
+      entity_id: switch.master_bathroom_switch
+    service: switch.turn_off
+  - data:
+      entity_id: switch.master_shower_switch
+    service: switch.turn_off
+  - data:
+      entity_id: switch.master_toilet_switch
+    service: switch.turn_off
+  - data:
+      entity_id: switch.master_bedroom_switch
+    service: switch.turn_off
