@@ -18,6 +18,18 @@
                 "source": "discovery",
                 "title": "Google Cast",
                 "version": 1
+            },
+            {
+                "connection_class": "local_push",
+                "data": {
+                    "network_key": null,
+                    "usb_path": "/dev/serial/by-id/usb-0658_0200-if00"
+                },
+                "domain": "zwave",
+                "entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "source": "import",
+                "title": "Z-Wave (import from configuration.yaml)",
+                "version": 1
             }
         ]
     },
