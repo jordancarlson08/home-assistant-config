@@ -30,6 +30,21 @@
                 "source": "import",
                 "title": "Z-Wave (import from configuration.yaml)",
                 "version": 1
+            },
+            {
+                "connection_class": "cloud_push",
+                "data": {
+                    "impl_domain": "nest",
+                    "tokens": {
+                        "access_token": "c.OY7wgm0IzVFfSvf0QKgyOPCqzDMMWhTTsU3lEk6VruT6m05Oy2iJjvjuptBsQjhSAk7azZdGpXRwzaQ8caBAeYqBDetbKFJJNITLLj869OWbMmN0OFUA4YBwUczVBSPL3ndiA3yrvGll469R",
+                        "expires_in": 315360000
+                    }
+                },
+                "domain": "nest",
+                "entry_id": "5fec18f62dc24f6689214a35da025c01",
+                "source": "user",
+                "title": "Nest (via configuration.yaml)",
+                "version": 1
             }
         ]
     },

@@ -369,6 +369,132 @@
                 "name": "Family Room",
                 "platform": "zwave",
                 "unique_id": "15-72057594294403073"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.kwikset_touchpad_electronic_deadbolt",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-16"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "60e2fd0910d04f6e9aa756535d5b91ca",
+                "disabled_by": null,
+                "entity_id": "sensor.kwikset_touchpad_electronic_deadbolt_alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "16-72057594312409089"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "60e2fd0910d04f6e9aa756535d5b91ca",
+                "disabled_by": null,
+                "entity_id": "sensor.kwikset_touchpad_electronic_deadbolt_alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "16-72057594312409105"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "lock.front_door",
+                "name": "Front Door Lock",
+                "platform": "zwave",
+                "unique_id": "16-72057594312163328"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_hswd100_wall_dimmer_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-17"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "dfea2da047f541a0be6f050cbbaabead",
+                "disabled_by": null,
+                "entity_id": "light.family_room1",
+                "name": "Family Room",
+                "platform": "zwave",
+                "unique_id": "17-72057594327957505"
+            },
+            {
+                "config_entry_id": "5fec18f62dc24f6689214a35da025c01",
+                "device_id": "f186a1fce7784f939f44b3bad26934bb",
+                "disabled_by": null,
+                "entity_id": "sensor.home_eta",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "__yS53ym3QCnJ5FuOtM3u835wdla2UlLLORqbB6n3neMGG-bFwbwrA-eta"
+            },
+            {
+                "config_entry_id": "5fec18f62dc24f6689214a35da025c01",
+                "device_id": "efe623e971204e1099e61a2cbd6c6cc8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.front_door_camera_sound_detected",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "7vjbg77R0DH76ZrecMg6-hkUgZcm17RgbzUkeUG7JQPIJAYlVzOqNA-sound_detected"
+            },
+            {
+                "config_entry_id": "5fec18f62dc24f6689214a35da025c01",
+                "device_id": "f186a1fce7784f939f44b3bad26934bb",
+                "disabled_by": null,
+                "entity_id": "sensor.home_security_state",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "__yS53ym3QCnJ5FuOtM3u835wdla2UlLLORqbB6n3neMGG-bFwbwrA-security_state"
+            },
+            {
+                "config_entry_id": "5fec18f62dc24f6689214a35da025c01",
+                "device_id": "efe623e971204e1099e61a2cbd6c6cc8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.front_door_camera_online",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "7vjbg77R0DH76ZrecMg6-hkUgZcm17RgbzUkeUG7JQPIJAYlVzOqNA-online"
+            },
+            {
+                "config_entry_id": "5fec18f62dc24f6689214a35da025c01",
+                "device_id": "efe623e971204e1099e61a2cbd6c6cc8",
+                "disabled_by": null,
+                "entity_id": "camera.front_door",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "7vjbg77R0DH76ZrecMg6-hkUgZcm17RgbzUkeUG7JQPIJAYlVzOqNA"
+            },
+            {
+                "config_entry_id": "5fec18f62dc24f6689214a35da025c01",
+                "device_id": "f186a1fce7784f939f44b3bad26934bb",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.home_away",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "__yS53ym3QCnJ5FuOtM3u835wdla2UlLLORqbB6n3neMGG-bFwbwrA-away"
+            },
+            {
+                "config_entry_id": "5fec18f62dc24f6689214a35da025c01",
+                "device_id": "efe623e971204e1099e61a2cbd6c6cc8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.front_door_camera_person_detected",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "7vjbg77R0DH76ZrecMg6-hkUgZcm17RgbzUkeUG7JQPIJAYlVzOqNA-person_detected"
+            },
+            {
+                "config_entry_id": "5fec18f62dc24f6689214a35da025c01",
+                "device_id": "efe623e971204e1099e61a2cbd6c6cc8",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.front_door_camera_motion_detected",
+                "name": null,
+                "platform": "nest",
+                "unique_id": "7vjbg77R0DH76ZrecMg6-hkUgZcm17RgbzUkeUG7JQPIJAYlVzOqNA-motion_detected"
             }
         ]
     },

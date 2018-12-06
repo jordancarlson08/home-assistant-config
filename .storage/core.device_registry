@@ -34,7 +34,7 @@
                 ],
                 "manufacturer": "Google Inc.",
                 "model": "Google Home",
-                "name": "Kitchen Speaker",
+                "name": "Family Room Home",
                 "sw_version": null
             },
             {
@@ -286,7 +286,7 @@
                 ],
                 "manufacturer": "Google Inc.",
                 "model": "Google Home Hub",
-                "name": "GoogleHomeHub8829",
+                "name": "Kitchen display",
                 "sw_version": null
             },
             {
@@ -377,6 +377,78 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "60e2fd0910d04f6e9aa756535d5b91ca",
+                "identifiers": [
+                    [
+                        "zwave",
+                        16
+                    ]
+                ],
+                "manufacturer": "Kwikset",
+                "model": "Touchpad Electronic Deadbolt",
+                "name": "Kwikset Touchpad Electronic Deadbolt",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "dfea2da047f541a0be6f050cbbaabead",
+                "identifiers": [
+                    [
+                        "zwave",
+                        17
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "5fec18f62dc24f6689214a35da025c01"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "f186a1fce7784f939f44b3bad26934bb",
+                "identifiers": [
+                    [
+                        "nest",
+                        "__yS53ym3QCnJ5FuOtM3u835wdla2UlLLORqbB6n3neMGG-bFwbwrA"
+                    ]
+                ],
+                "manufacturer": "Nest Labs",
+                "model": "Structure",
+                "name": "Home",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "5fec18f62dc24f6689214a35da025c01"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "efe623e971204e1099e61a2cbd6c6cc8",
+                "identifiers": [
+                    [
+                        "nest",
+                        "7vjbg77R0DH76ZrecMg6-hkUgZcm17RgbzUkeUG7JQPIJAYlVzOqNA"
+                    ]
+                ],
+                "manufacturer": "Nest Labs",
+                "model": "Camera",
+                "name": "Front Door Camera",
                 "sw_version": null
             }
         ]
