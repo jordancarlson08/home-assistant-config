@@ -70,7 +70,7 @@
                 ],
                 "manufacturer": "Google Inc.",
                 "model": "Google Home",
-                "name": "Entryway Speaker",
+                "name": "Front Speaker",
                 "sw_version": null
             },
             {
@@ -125,6 +125,258 @@
                 "manufacturer": "",
                 "model": "AirScreen",
                 "name": "ShieldTV[Cast]",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "e115e9db4fc145299a40e5d4e52efa84",
+                "identifiers": [
+                    [
+                        "zwave",
+                        2
+                    ]
+                ],
+                "manufacturer": "Linear",
+                "model": "PD300Z-2 Plug-in Dimmer Module",
+                "name": "Master Dimmer",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "9f339a5dc47f43d6943f5e8b5da0124e",
+                "identifiers": [
+                    [
+                        "zwave",
+                        3
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WS100+ Wall Switch",
+                "name": "Master Light",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "ec18aa1763f04a359302537d4e7f3a58",
+                "identifiers": [
+                    [
+                        "zwave",
+                        5
+                    ]
+                ],
+                "manufacturer": "Aeotec",
+                "model": "ZW089 Recessed Door Sensor Gen5",
+                "name": "Aeotec ZW089 Recessed Door Sensor Gen5",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "a574f5e40a1d4dfa8719fa1e0cf62e1a",
+                "identifiers": [
+                    [
+                        "zwave",
+                        6
+                    ]
+                ],
+                "manufacturer": "GE",
+                "model": "12722 On/Off Relay Switch",
+                "name": "GE 12722 On/Off Relay Switch",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "a17a7f916495495ba0def58e5eac55d4",
+                "identifiers": [
+                    [
+                        "zwave",
+                        7
+                    ]
+                ],
+                "manufacturer": "GE",
+                "model": "12730 Fan Control Switch",
+                "name": "GE 12730 Fan Control Switch",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "feec1ee1166b41b482dc7391ed731a69",
+                "identifiers": [
+                    [
+                        "zwave",
+                        8
+                    ]
+                ],
+                "manufacturer": "GE",
+                "model": "12722 On/Off Relay Switch",
+                "name": "GE 12722 On/Off Relay Switch",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "0314acc8d5dc4da2b46a324b2ca6adae",
+                "identifiers": [
+                    [
+                        "zwave",
+                        9
+                    ]
+                ],
+                "manufacturer": "GE",
+                "model": "12722 On/Off Relay Switch",
+                "name": "GE 12722 On/Off Relay Switch",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "4afc97cb309c4dd0b0c4b346b0d309d2",
+                "identifiers": [
+                    [
+                        "zwave",
+                        10
+                    ]
+                ],
+                "manufacturer": "GE",
+                "model": "12720 Outdoor Smart Switch",
+                "name": "GE 12720 Outdoor Smart Switch",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "9ece720ed15c41d5926249aa9a1bc4d9",
+                "identifiers": [
+                    [
+                        "cast",
+                        "aaef5521cb0e2fd59d5d74a1ce2a9233"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Google Home Hub",
+                "name": "GoogleHomeHub8829",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "7a8df1c0e08d439fb009990a2fe324a2",
+                "identifiers": [
+                    [
+                        "zwave",
+                        11
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "91ce49e047534ee6922f626b7442a5f6",
+                "identifiers": [
+                    [
+                        "zwave",
+                        12
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "ba1813ac37e9465cbe6e44088757f581",
+                "identifiers": [
+                    [
+                        "zwave",
+                        13
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "bafec26cb2fb4739840bf78b75fee61d",
+                "identifiers": [
+                    [
+                        "zwave",
+                        14
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "be89facb68d640468fd17c533707ab06",
+                "identifiers": [
+                    [
+                        "zwave",
+                        15
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer HS-WD100+ Wall Dimmer",
                 "sw_version": null
             }
         ]

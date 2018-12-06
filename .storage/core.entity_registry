@@ -20,8 +20,8 @@
                 "unique_id": "node-2"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "e115e9db4fc145299a40e5d4e52efa84",
                 "disabled_by": null,
                 "entity_id": "light.master_dimmer_level",
                 "name": null,
@@ -65,8 +65,8 @@
                 "unique_id": "node-5"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "ec18aa1763f04a359302537d4e7f3a58",
                 "disabled_by": null,
                 "entity_id": "binary_sensor.aeotec_zw089_recessed_door_sensor_gen5_sensor_2",
                 "name": "Front Door",
@@ -74,8 +74,8 @@
                 "unique_id": "5-72057594126794752"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "9f339a5dc47f43d6943f5e8b5da0124e",
                 "disabled_by": null,
                 "entity_id": "switch.master_bathroom_switch",
                 "name": "Master Bathroom",
@@ -119,8 +119,8 @@
                 "unique_id": "node-9"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "0314acc8d5dc4da2b46a324b2ca6adae",
                 "disabled_by": null,
                 "entity_id": "switch.master_toilet_switch",
                 "name": "Master Toilet",
@@ -128,8 +128,8 @@
                 "unique_id": "9-72057594193723392"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "feec1ee1166b41b482dc7391ed731a69",
                 "disabled_by": null,
                 "entity_id": "switch.master_shower_switch",
                 "name": "Master Shower",
@@ -137,8 +137,8 @@
                 "unique_id": "8-72057594176946176"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "a574f5e40a1d4dfa8719fa1e0cf62e1a",
                 "disabled_by": null,
                 "entity_id": "switch.master_bedroom_switch",
                 "name": "Master Bedroom",
@@ -155,8 +155,8 @@
                 "unique_id": "7-72057594160185345"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "a17a7f916495495ba0def58e5eac55d4",
                 "disabled_by": null,
                 "entity_id": "fan.master_fan",
                 "name": "Master Fan",
@@ -254,8 +254,8 @@
                 "unique_id": 6502405
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "4afc97cb309c4dd0b0c4b346b0d309d2",
                 "disabled_by": null,
                 "entity_id": "switch.outdoor_switch",
                 "name": "Heating Pad",
@@ -270,6 +270,105 @@
                 "name": null,
                 "platform": "cast",
                 "unique_id": "8f8584fd-d7d4-81c5-fe3d-071f7376d096"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "9ece720ed15c41d5926249aa9a1bc4d9",
+                "disabled_by": null,
+                "entity_id": "media_player.googlehomehub8829",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "aaef5521-cb0e-2fd5-9d5d-74a1ce2a9233"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_hswd100_wall_dimmer",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-11"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_hswd100_wall_dimmer_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-12"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_hswd100_wall_dimmer_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-13"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_hswd100_wall_dimmer_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-14"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "7a8df1c0e08d439fb009990a2fe324a2",
+                "disabled_by": null,
+                "entity_id": "light.dining_room",
+                "name": "Dining Room",
+                "platform": "zwave",
+                "unique_id": "11-72057594227294209"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "ba1813ac37e9465cbe6e44088757f581",
+                "disabled_by": null,
+                "entity_id": "light.kitchen_cans",
+                "name": "Kitchen Cans",
+                "platform": "zwave",
+                "unique_id": "13-72057594260848641"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "bafec26cb2fb4739840bf78b75fee61d",
+                "disabled_by": null,
+                "entity_id": "light.kitchen_pendents",
+                "name": "Kitchen Pendents",
+                "platform": "zwave",
+                "unique_id": "14-72057594277625857"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "91ce49e047534ee6922f626b7442a5f6",
+                "disabled_by": null,
+                "entity_id": "light.kitchen_door",
+                "name": "Kitchen Door",
+                "platform": "zwave",
+                "unique_id": "12-72057594244071425"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_hswd100_wall_dimmer_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-15"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "be89facb68d640468fd17c533707ab06",
+                "disabled_by": null,
+                "entity_id": "light.family_room",
+                "name": "Family Room",
+                "platform": "zwave",
+                "unique_id": "15-72057594294403073"
             }
         ]
     },

@@ -20,7 +20,69 @@
                 "user_id": "f3c8c33f4f434d5a92586bc0fd40412e"
             }
         ],
+        "groups": [
+            {
+                "id": "da52b2f7ca4a46518cc9731e8725262d",
+                "name": "All Access"
+            }
+        ],
         "refresh_tokens": [
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://home.jordancarlson.me/",
+                "client_name": null,
+                "created_at": "2018-09-04T19:09:46.593129+00:00",
+                "id": "b090b271a7274463a996b20b15ff0cdc",
+                "jwt_key": "8db0a0b35a3dea0795e6e7bef050e411bc8b3b50f20a20e34d5cf8f0e4d9e513c528c0ea793b6a0547529fa9de113589ef337e4a433ff2cd09c5be89fc931de3",
+                "last_used_at": "2018-10-19T01:27:09.681744+00:00",
+                "last_used_ip": "192.168.1.1",
+                "token": "dd5d7ca75f7228ffde38d97be0de6972f777c50b507063ae2f33959f47ff9b649e93d3987f46fa72774620276592ee1d1e690380765eb50fbbc0419672e88ee2",
+                "token_type": "normal",
+                "user_id": "907ead22ac8041c3b463127c1c63a190"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://home.jordancarlson.me/",
+                "client_name": null,
+                "created_at": "2018-09-04T16:35:47.593644+00:00",
+                "id": "e15a5da81607479aa5c717202c058d28",
+                "jwt_key": "cfd28dd0926a293163ae8b1b832d8c1635d89ed2425190b07ac7c9b5c4c26062893a3ccad795b54f5a864c73e18b7fffdb082b5310f248a54a7a1b42a25f869d",
+                "last_used_at": null,
+                "last_used_ip": null,
+                "token": "de3f2519ba2832f28e66b05f44803124e0f79226e174842e8c48b8139f34dfedcb37e4c06ba8b2bfeca52d37ff74643564da5bd74cff121fa44abbe02e0922d9",
+                "token_type": "normal",
+                "user_id": "907ead22ac8041c3b463127c1c63a190"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://home.jordancarlson.me/",
+                "client_name": null,
+                "created_at": "2018-09-04T17:05:19.571112+00:00",
+                "id": "2bb55cd7aeb547a0acc0e040695991f0",
+                "jwt_key": "37763a59f981f084b6ffdf970d6bcfe47de192a67a2667fb7caa31e1d8cdf0551fdc91cf5d9b1c944f8872a20805aea5bcfc81a5caff2b6f271f52b5ef17b8ed",
+                "last_used_at": "2018-11-10T18:56:32.487446+00:00",
+                "last_used_ip": "192.168.1.1",
+                "token": "e908205aa7b332dd38ee296a06f86f71e36511b00134c9bb7603389e0bdef1b06a1ed34019e057f72457bfddd3313ff00e811fa39922fc3783c5bcfeb8735ec2",
+                "token_type": "normal",
+                "user_id": "907ead22ac8041c3b463127c1c63a190"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://oauth-redirect.googleusercontent.com/",
+                "client_name": null,
+                "created_at": "2018-10-20T01:20:07.514326+00:00",
+                "id": "04bfd0e8b8154f0ab0be4741e9f4534b",
+                "jwt_key": "e4af413fe95f36a06ecb7596959974bb959717fc7e6fa93729ad76b16fc385020ea6dc8ad774243c7dacbd68b3cc50caf4f09fe33d0bf20d8dd5ad0df916e76a",
+                "last_used_at": "2018-11-10T18:23:22.300668+00:00",
+                "last_used_ip": "66.102.6.9",
+                "token": "ab48cebe15b5d5dd857e7023f4bc5ca0289881cfdde96c38f7c0477acad40c0bc8f5ad201ca2c94bfc04c228c4821ec5c91ec489308386f9e896518a551ea19c",
+                "token_type": "normal",
+                "user_id": "907ead22ac8041c3b463127c1c63a190"
+            },
             {
                 "access_token_expiration": 1800.0,
                 "client_icon": null,
@@ -38,34 +100,6 @@
             {
                 "access_token_expiration": 1800.0,
                 "client_icon": null,
-                "client_id": "https://oauth-redirect.googleusercontent.com/",
-                "client_name": null,
-                "created_at": "2018-10-20T01:20:07.514326+00:00",
-                "id": "04bfd0e8b8154f0ab0be4741e9f4534b",
-                "jwt_key": "e4af413fe95f36a06ecb7596959974bb959717fc7e6fa93729ad76b16fc385020ea6dc8ad774243c7dacbd68b3cc50caf4f09fe33d0bf20d8dd5ad0df916e76a",
-                "last_used_at": "2018-10-24T00:50:39.499607+00:00",
-                "last_used_ip": "66.249.84.242",
-                "token": "ab48cebe15b5d5dd857e7023f4bc5ca0289881cfdde96c38f7c0477acad40c0bc8f5ad201ca2c94bfc04c228c4821ec5c91ec489308386f9e896518a551ea19c",
-                "token_type": "normal",
-                "user_id": "907ead22ac8041c3b463127c1c63a190"
-            },
-            {
-                "access_token_expiration": 1800.0,
-                "client_icon": null,
-                "client_id": "https://home.jordancarlson.me/",
-                "client_name": null,
-                "created_at": "2018-10-19T04:07:50.040410+00:00",
-                "id": "b4bad7b50b074f2e8f75666e20145907",
-                "jwt_key": "b4d0e2b62244b1920a41de8b8498644cfa9db9094967cac15e47d386500b2fb9819d276c58fee3c737b45771a353506d4abe5e23323c5ba5e85a6c32e5335836",
-                "last_used_at": "2018-10-22T13:49:41.535232+00:00",
-                "last_used_ip": "75.148.97.113",
-                "token": "bb195017d1120a8fea3a38675baac46a17822a2686ba3f0ec3796786dee457a34a3bceb30a3cfc62dec2ef2a9e5361166f9800483e02140e22dae167fbf3d550",
-                "token_type": "normal",
-                "user_id": "907ead22ac8041c3b463127c1c63a190"
-            },
-            {
-                "access_token_expiration": 1800.0,
-                "client_icon": null,
                 "client_id": "https://home.jordancarlson.me/",
                 "client_name": null,
                 "created_at": "2018-10-20T02:37:56.220562+00:00",
@@ -74,20 +108,6 @@
                 "last_used_at": "2018-10-21T03:39:46.337728+00:00",
                 "last_used_ip": "192.168.1.1",
                 "token": "0d4b639c36f2042b1c81f869e2e7c8ab2fa07b32f40587ae1b2f827a5b071f560d829d96c26141c2a065411b85498d74c182b4426fdedc799a40438f26a17f58",
-                "token_type": "normal",
-                "user_id": "907ead22ac8041c3b463127c1c63a190"
-            },
-            {
-                "access_token_expiration": 1800.0,
-                "client_icon": null,
-                "client_id": "https://home.jordancarlson.me/",
-                "client_name": null,
-                "created_at": "2018-09-04T16:35:47.593644+00:00",
-                "id": "e15a5da81607479aa5c717202c058d28",
-                "jwt_key": "cfd28dd0926a293163ae8b1b832d8c1635d89ed2425190b07ac7c9b5c4c26062893a3ccad795b54f5a864c73e18b7fffdb082b5310f248a54a7a1b42a25f869d",
-                "last_used_at": null,
-                "last_used_ip": null,
-                "token": "de3f2519ba2832f28e66b05f44803124e0f79226e174842e8c48b8139f34dfedcb37e4c06ba8b2bfeca52d37ff74643564da5bd74cff121fa44abbe02e0922d9",
                 "token_type": "normal",
                 "user_id": "907ead22ac8041c3b463127c1c63a190"
             },
@@ -110,26 +130,12 @@
                 "client_icon": null,
                 "client_id": "https://home.jordancarlson.me/",
                 "client_name": null,
-                "created_at": "2018-09-04T19:09:46.593129+00:00",
-                "id": "b090b271a7274463a996b20b15ff0cdc",
-                "jwt_key": "8db0a0b35a3dea0795e6e7bef050e411bc8b3b50f20a20e34d5cf8f0e4d9e513c528c0ea793b6a0547529fa9de113589ef337e4a433ff2cd09c5be89fc931de3",
-                "last_used_at": "2018-10-19T01:27:09.681744+00:00",
-                "last_used_ip": "192.168.1.1",
-                "token": "dd5d7ca75f7228ffde38d97be0de6972f777c50b507063ae2f33959f47ff9b649e93d3987f46fa72774620276592ee1d1e690380765eb50fbbc0419672e88ee2",
-                "token_type": "normal",
-                "user_id": "907ead22ac8041c3b463127c1c63a190"
-            },
-            {
-                "access_token_expiration": 1800.0,
-                "client_icon": null,
-                "client_id": "https://home.jordancarlson.me/",
-                "client_name": null,
-                "created_at": "2018-09-04T17:05:19.571112+00:00",
-                "id": "2bb55cd7aeb547a0acc0e040695991f0",
-                "jwt_key": "37763a59f981f084b6ffdf970d6bcfe47de192a67a2667fb7caa31e1d8cdf0551fdc91cf5d9b1c944f8872a20805aea5bcfc81a5caff2b6f271f52b5ef17b8ed",
-                "last_used_at": "2018-10-19T16:12:34.702866+00:00",
-                "last_used_ip": "192.168.1.1",
-                "token": "e908205aa7b332dd38ee296a06f86f71e36511b00134c9bb7603389e0bdef1b06a1ed34019e057f72457bfddd3313ff00e811fa39922fc3783c5bcfeb8735ec2",
+                "created_at": "2018-10-19T04:07:50.040410+00:00",
+                "id": "b4bad7b50b074f2e8f75666e20145907",
+                "jwt_key": "b4d0e2b62244b1920a41de8b8498644cfa9db9094967cac15e47d386500b2fb9819d276c58fee3c737b45771a353506d4abe5e23323c5ba5e85a6c32e5335836",
+                "last_used_at": "2018-11-10T00:10:49.717217+00:00",
+                "last_used_ip": "45.56.49.137",
+                "token": "bb195017d1120a8fea3a38675baac46a17822a2686ba3f0ec3796786dee457a34a3bceb30a3cfc62dec2ef2a9e5361166f9800483e02140e22dae167fbf3d550",
                 "token_type": "normal",
                 "user_id": "907ead22ac8041c3b463127c1c63a190"
             },
@@ -152,10 +158,38 @@
                 "client_icon": null,
                 "client_id": "https://home.jordancarlson.me/",
                 "client_name": null,
+                "created_at": "2018-10-26T03:55:57.149723+00:00",
+                "id": "5f922660448046d692f50b7bb17863f5",
+                "jwt_key": "a05d5e27b93bb2ae8369d03f3d107930755822e90034efc03b62d214270ef60e1458a34cea01f1ecb3342420c2e905221cf6ed75c186189964ecca868997140c",
+                "last_used_at": "2018-10-26T03:55:57.150144+00:00",
+                "last_used_ip": "192.168.1.1",
+                "token": "739ac60aa6ab91751f11d23d6bbef6eba0182bfef462893b9157aea5f51110458b0e1491d7e43e886e8ed35db95fd4303d86ce2e1e82e279555d8a080d40b91a",
+                "token_type": "normal",
+                "user_id": "f3c8c33f4f434d5a92586bc0fd40412e"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://home.jordancarlson.me/",
+                "client_name": null,
+                "created_at": "2018-10-26T03:56:41.462223+00:00",
+                "id": "8c3a315c20684988982eddba67bf4560",
+                "jwt_key": "a6696251852905720b90d07d7fafa4a802234c904e1cdd4b5bd3efb95e6e6e00820e6116e86d1d2d12367aadda733064970b1c865ac6084195abcb81e4f66ac8",
+                "last_used_at": "2018-11-10T12:51:32.729029+00:00",
+                "last_used_ip": "192.168.1.1",
+                "token": "7f55f52f862e298b92e6a00512848510846e9fd9f99774a4e4264806983add5b06d4df099fbf09899d9c6e76eb09cdf73a598f50ee12d84031b5dbb58762fb93",
+                "token_type": "normal",
+                "user_id": "f3c8c33f4f434d5a92586bc0fd40412e"
+            },
+            {
+                "access_token_expiration": 1800.0,
+                "client_icon": null,
+                "client_id": "https://home.jordancarlson.me/",
+                "client_name": null,
                 "created_at": "2018-10-01T03:35:48.761475+00:00",
                 "id": "b802302317ec47d8be423cad99b7952f",
                 "jwt_key": "b277ed3bd42f8751025e168e3dad541ee1165036d8fd494cc5fa25c35869b5ca75843b34cd6efc5e5b86b8fd8a741d452d9d3394aac7525b2c827b9567c0a28f",
-                "last_used_at": "2018-10-01T04:08:53.005083+00:00",
+                "last_used_at": "2018-10-26T03:55:09.995296+00:00",
                 "last_used_ip": "192.168.1.1",
                 "token": "08ca928f7ecd18efa60f41838618fd8f259f849ee60ff3c430c05bbd2f8dadca02a5d8fa699aaea6ea6e6f58ceb92cdda8742c51550e3c70e1655c95f2d13666",
                 "token_type": "normal",
@@ -164,6 +198,9 @@
         ],
         "users": [
             {
+                "group_ids": [
+                    "da52b2f7ca4a46518cc9731e8725262d"
+                ],
                 "id": "907ead22ac8041c3b463127c1c63a190",
                 "is_active": true,
                 "is_owner": true,
@@ -171,6 +208,9 @@
                 "system_generated": false
             },
             {
+                "group_ids": [
+                    "da52b2f7ca4a46518cc9731e8725262d"
+                ],
                 "id": "f3c8c33f4f434d5a92586bc0fd40412e",
                 "is_active": true,
                 "is_owner": false,
