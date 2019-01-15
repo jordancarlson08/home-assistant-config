@@ -8,9 +8,10 @@ homeassistant:
 
   customize: !include customize.yaml
 
-# group: !include groups.yaml
+
 automation: !include automations.yaml
 script: !include scripts.yaml
+group: !include groups.yaml
 
 frontend:
 config:
@@ -151,38 +152,7 @@ sensor:
       - type: load_5m
       - type: load_15m
   
-group:
-  carlson:
-    view: yes
-    name: Carlson
-    entities:
-      - group.master
-      - group.multisensor_1
-      - group.system
-  master:
-    name: Master Bedroom
-    entities:
-      - switch.master_bedroom_switch
-      - fan.master_fan
-      - switch.master_bathroom_switch
-      - switch.master_shower_switch
-      - switch.master_toilet_switch
-  multisensor_1:  
-    name: Multisensor  
-    entities:  
-      - sensor.temperature
-      - sensor.feels_like
-      - sensor.humidity
-      - sensor.pir  
-      - light.led
-  system:
-    name: System Status
-    entities:
-      - sensor.processor_use
-      - sensor.load_1m
-      - sensor.load_5m
-      - sensor.load_15m
-      - sensor.memory_free
+
 
 
 

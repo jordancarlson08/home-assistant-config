@@ -1,0 +1,45 @@
+###################
+### groups.yaml ###
+###################
+
+############ VIEWS ############
+
+carlson:
+  view: yes
+  name: Carlson
+  entities:
+    - group.master
+    - group.multisensor_1
+    - group.system
+
+
+############ GROUPS ############
+
+master:
+  name: Master Bedroom
+  entities:
+    - switch.master_bedroom_switch
+    - fan.master_fan
+    - switch.master_bathroom_switch
+    - switch.master_shower_switch
+    - switch.master_toilet_switch
+    - light.master_lamp
+    - switch.outdoor_switch
+    - sensor.master_temperature
+    - binary_sensor.master_occupancy
+multisensor_1:  
+  name: Multisensor  
+  entities:  
+    - sensor.temperature
+    - sensor.feels_like
+    - sensor.humidity
+    - sensor.pir  
+    - light.led
+system:
+  name: System Status
+  entities:
+    - sensor.processor_use
+    - sensor.load_1m
+    - sensor.load_5m
+    - sensor.load_15m
+    - sensor.memory_free
