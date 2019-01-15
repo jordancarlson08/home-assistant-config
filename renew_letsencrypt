@@ -1,0 +1,9 @@
+ha_stop
+
+su
+
+/home/homeassistant/certbot/certbot-auto renew --quiet --no-self-upgrade --standalone --preferred-challenges tls-sni-01 --tls-sni-01-port 8123
+
+exit
+
+ha_start
