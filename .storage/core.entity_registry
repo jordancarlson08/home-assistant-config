@@ -20,15 +20,6 @@
                 "unique_id": "node-2"
             },
             {
-                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
-                "device_id": "e115e9db4fc145299a40e5d4e52efa84",
-                "disabled_by": null,
-                "entity_id": "light.master_dimmer_level",
-                "name": null,
-                "platform": "zwave",
-                "unique_id": "2-72057594076299265"
-            },
-            {
                 "config_entry_id": null,
                 "device_id": null,
                 "disabled_by": null,
@@ -495,6 +486,87 @@
                 "name": null,
                 "platform": "nest",
                 "unique_id": "7vjbg77R0DH76ZrecMg6-hkUgZcm17RgbzUkeUG7JQPIJAYlVzOqNA-motion_detected"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "b3d7025dc2294725be9204918de9b1f9",
+                "disabled_by": null,
+                "entity_id": "media_player.shieldtvcast_2",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "ff51a282-b9e8-fc95-8c1f-4fdfa593e364"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "e115e9db4fc145299a40e5d4e52efa84",
+                "disabled_by": null,
+                "entity_id": "light.master_lamp",
+                "name": "Master Lamp",
+                "platform": "zwave",
+                "unique_id": "2-72057594076299265"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_hswd100_wall_dimmer_7",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-18"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "c39c24669b0a4d829217ddcd4e07527b",
+                "disabled_by": null,
+                "entity_id": "light.loft",
+                "name": "Loft Light",
+                "platform": "zwave",
+                "unique_id": "18-72057594344734721"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_m2020_series_1921681215_tray_1",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "ZK0LB8GK9E01GSH_tray_1"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_m2020_series_1921681215",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "ZK0LB8GK9E01GSH_main"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_m2020_series_1921681215_output_tray_0",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "ZK0LB8GK9E01GSH_output_tray_0"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "sensor.samsung_m2020_series_1921681215_toner_black",
+                "name": null,
+                "platform": "syncthru",
+                "unique_id": "ZK0LB8GK9E01GSH_toner_black"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "3882ee650bf24368b08afbf07343cf9d",
+                "disabled_by": null,
+                "entity_id": "media_player.mibox3",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "4831de6a-a6ae-7b3a-6e85-06c09c75203c"
             }
         ]
     },

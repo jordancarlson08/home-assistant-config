@@ -450,6 +450,60 @@
                 "model": "Camera",
                 "name": "Front Door Camera",
                 "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "b3d7025dc2294725be9204918de9b1f9",
+                "identifiers": [
+                    [
+                        "cast",
+                        "ff51a282b9e8fc958c1f4fdfa593e364"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": "AirScreen",
+                "name": "ShieldTV[Cast]",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "c39c24669b0a4d829217ddcd4e07527b",
+                "identifiers": [
+                    [
+                        "zwave",
+                        18
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "3882ee650bf24368b08afbf07343cf9d",
+                "identifiers": [
+                    [
+                        "cast",
+                        "4831de6aa6ae7b3a6e8506c09c75203c"
+                    ]
+                ],
+                "manufacturer": "Xiaomi",
+                "model": "MIBOX3",
+                "name": "MIBOX3",
+                "sw_version": null
             }
         ]
     },
