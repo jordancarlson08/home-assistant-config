@@ -389,8 +389,8 @@
                 "unique_id": "16-72057594312409105"
             },
             {
-                "config_entry_id": null,
-                "device_id": null,
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "60e2fd0910d04f6e9aa756535d5b91ca",
                 "disabled_by": null,
                 "entity_id": "lock.front_door",
                 "name": "Front Door Lock",
