@@ -61,11 +61,11 @@ zwave:
   network_key: !secret zwave_key
   # polling_interval: 30000
 
-#cover:
-#  - platform: myq
-#    username: !secret myq_user
-#    password: !secret myq_password
-#    type: liftmaster
+cover:
+ - platform: myq
+   username: !secret myq_user
+   password: !secret myq_password
+   type: liftmaster
 
 ecobee:
   api_key: qzqurGeNiFoo6QpobTVScLX04P6K1w6Q 
