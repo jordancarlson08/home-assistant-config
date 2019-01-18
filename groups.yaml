@@ -12,6 +12,15 @@ carlson:
     - group.multisensor_1
     - group.system
 
+settings:
+  view: yes
+  name: Debug
+  cards:
+    - type: entity-filter
+      filter: [{}]
+      card_config:
+        title: All entities
+
 
 ############ GROUPS ############
 
