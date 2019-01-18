@@ -1,40 +1,47 @@
-title: Carlson Home
+title: My Lovely Home Automation
 views:
   - title: Home
     cards:
-      # - type: media-control
-      #   entity: media_player.entryway_speaker
+      - id: camera_front_door
+        type: picture-entity      
+        title: Front Door
+        entity: camera.front_door
+        camera_image: camera.front_door
+        show_info: true
+        tap_action: dialog
 
-      # - type: media-control
-      #   entity: media_player.home_group
+      - type: media-control
+        entity: media_player.entryway_speaker
 
-      # - type: media-control
-      #   entity: media_player.home_only
+      - type: media-control
+        entity: media_player.googlehomehub8829
 
-      # - type: media-control
-      #   entity: media_player.kitchen_speaker
+      - type: media-control
+        entity: media_player.home_group
 
-      # - type: media-control
-      #   entity: media_player.loft_speaker
+      - type: media-control
+        entity: media_player.home_only
 
-      # - type: media-control
-      #   entity: media_player.loft_wall
+      - type: media-control
+        entity: media_player.kitchen_speaker
 
-      # - type: media-control
-      #   entity: media_player.shield
+      - type: media-control
+        entity: media_player.loft_speaker
 
-      # - type: media-control
-      #   entity: media_player.soundbar
+      - type: media-control
+        entity: media_player.loft_wall
 
-      - type: sensor
-        entity: sensor.dexcom
-        name: Dexcom
-        height: 400
-        accuracy: 72
-        hours_to_show: 6
-        unit: mg/dL
-        graph: line
-        icon: mdi:water
+      - type: media-control
+        entity: media_player.mibox3
+
+      - type: media-control
+        entity: media_player.shield
+
+      - type: media-control
+        entity: media_player.shieldtvcast_2
+
+      - type: media-control
+        entity: media_player.soundbar
 
       - type: entities
         title: Automations
@@ -44,15 +51,39 @@ views:
           - automation.double_tap_up
           - automation.heating_pad_off
           - automation.heating_pad_on
+          - automation.long_tap_down
           - automation.motion_light
           - automation.triple_tap_down
           - automation.triple_tap_up
+          - automation.warner_green
+          - automation.warner_wake_up
 
       - type: entities
-        title: Binary Sensor
+        title: Binary Sensors
         show_header_toggle: true
         entities:
           - binary_sensor.aeotec_zw089_recessed_door_sensor_gen5_sensor_2
+          - binary_sensor.front_door_camera_motion_detected
+          - binary_sensor.front_door_camera_online
+          - binary_sensor.front_door_camera_person_detected
+          - binary_sensor.front_door_camera_sound_detected
+          - binary_sensor.home_away
+          - binary_sensor.home_occupancy
+          - binary_sensor.master_occupancy
+          - binary_sensor.nursery_occupancy
+          - binary_sensor.warner_occupancy
+
+      - type: entities
+        title: Climate
+        show_header_toggle: true
+        entities:
+          - climate.home
+
+      - type: entities
+        title: Configurator
+        show_header_toggle: true
+        entities:
+          - configurator.plex_media_server
 
       - type: entities
         title: Cover
@@ -72,8 +103,10 @@ views:
         entities:
           - group.all_automations
           - group.all_covers
+          - group.all_devices
           - group.all_fans
           - group.all_lights
+          - group.all_locks
           - group.all_switches
           - group.carlson
           - group.master
@@ -84,8 +117,20 @@ views:
         title: Lights
         show_header_toggle: true
         entities:
+          - light.dining_room
+          - light.family_room1
+          - light.kitchen_cans
+          - light.kitchen_door
+          - light.kitchen_pendents
           - light.led
-          - light.master_dimmer_level
+          - light.loft
+          - light.master_lamp
+
+      - type: entities
+        title: Lock
+        show_header_toggle: true
+        entities:
+          - lock.front_door
 
       - type: entities
         title: Sensors
@@ -93,14 +138,27 @@ views:
         entities:
           - sensor.dexcom
           - sensor.feels_like
+          - sensor.home_eta
+          - sensor.home_humidity
+          - sensor.home_security_state
+          - sensor.home_temperature
           - sensor.humidity
+          - sensor.kwikset_touchpad_electronic_deadbolt_alarm_level
+          - sensor.kwikset_touchpad_electronic_deadbolt_alarm_type
           - sensor.load_15m
           - sensor.load_1m
           - sensor.load_5m
+          - sensor.master_temperature
           - sensor.memory_free
+          - sensor.nursery_temperature
           - sensor.pir
           - sensor.processor_use
+          - sensor.samsung_m2020_series_1921681215
+          - sensor.samsung_m2020_series_1921681215_output_tray_0
+          - sensor.samsung_m2020_series_1921681215_toner_black
+          - sensor.samsung_m2020_series_1921681215_tray_1
           - sensor.temperature
+          - sensor.warner_temperature
 
       - type: entities
         title: Switchs
@@ -114,6 +172,18 @@ views:
           - switch.wake_on_lan
 
       - type: entities
+        title: Weather
+        show_header_toggle: true
+        entities:
+          - weather.home
+
+      - type: entities
+        title: Zone
+        show_header_toggle: true
+        entities:
+          - zone.home
+
+      - type: entities
         title: Zwaves
         show_header_toggle: true
         entities:
@@ -124,5 +194,12 @@ views:
           - zwave.ge_12722_onoff_relay_switch_2
           - zwave.ge_12722_onoff_relay_switch_3
           - zwave.ge_12730_fan_control_switch
+          - zwave.homeseer_hswd100_wall_dimmer
+          - zwave.homeseer_hswd100_wall_dimmer_2
+          - zwave.homeseer_hswd100_wall_dimmer_3
+          - zwave.homeseer_hswd100_wall_dimmer_4
+          - zwave.homeseer_hswd100_wall_dimmer_6
+          - zwave.homeseer_hswd100_wall_dimmer_7
+          - zwave.kwikset_touchpad_electronic_deadbolt
           - zwave.master_dimmer
           - zwave.master_light
