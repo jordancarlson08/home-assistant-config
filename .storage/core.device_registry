@@ -504,6 +504,42 @@
                 "model": "MIBOX3",
                 "name": "MIBOX3",
                 "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "8d41325170244b6c81c42341c8feb328",
+                "identifiers": [
+                    [
+                        "zwave",
+                        19
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "sw_version": null
+            },
+            {
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "cd0062f3a46e48c29156160548e251a0",
+                "identifiers": [
+                    [
+                        "zwave",
+                        20
+                    ]
+                ],
+                "manufacturer": "HomeSeer",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "sw_version": null
             }
         ]
     },

@@ -57,15 +57,6 @@
             },
             {
                 "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
-                "device_id": "ec18aa1763f04a359302537d4e7f3a58",
-                "disabled_by": null,
-                "entity_id": "binary_sensor.aeotec_zw089_recessed_door_sensor_gen5_sensor_2",
-                "name": "Front Door",
-                "platform": "zwave",
-                "unique_id": "5-72057594126794752"
-            },
-            {
-                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
                 "device_id": "9f339a5dc47f43d6943f5e8b5da0124e",
                 "disabled_by": null,
                 "entity_id": "switch.master_bathroom_switch",
@@ -108,15 +99,6 @@
                 "name": null,
                 "platform": "zwave",
                 "unique_id": "node-9"
-            },
-            {
-                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
-                "device_id": "0314acc8d5dc4da2b46a324b2ca6adae",
-                "disabled_by": null,
-                "entity_id": "switch.master_toilet_switch",
-                "name": "Master Toilet",
-                "platform": "zwave",
-                "unique_id": "9-72057594193723392"
             },
             {
                 "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
@@ -567,6 +549,60 @@
                 "name": null,
                 "platform": "cast",
                 "unique_id": "4831de6a-a6ae-7b3a-6e85-06c09c75203c"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_hs_wd100_wall_dimmer",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-19"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "8d41325170244b6c81c42341c8feb328",
+                "disabled_by": null,
+                "entity_id": "light.upstairs_bathroom",
+                "name": "Upstairs Bathroom",
+                "platform": "zwave",
+                "unique_id": "19-72057594361511937"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "ec18aa1763f04a359302537d4e7f3a58",
+                "disabled_by": null,
+                "entity_id": "binary_sensor.front_door",
+                "name": "Front Door",
+                "platform": "zwave",
+                "unique_id": "5-72057594126794752"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_hs_wd100_wall_dimmer_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-20"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "0314acc8d5dc4da2b46a324b2ca6adae",
+                "disabled_by": null,
+                "entity_id": "switch.upstairs_main",
+                "name": "Upstairs Main",
+                "platform": "zwave",
+                "unique_id": "9-72057594193723392"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "cd0062f3a46e48c29156160548e251a0",
+                "disabled_by": null,
+                "entity_id": "light.master_toilet",
+                "name": "Master Toilet",
+                "platform": "zwave",
+                "unique_id": "20-72057594378289153"
             }
         ]
     },

@@ -1,0 +1,205 @@
+{
+    "data": {
+        "config": {
+            "title": "Home Assistant",
+            "views": [
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "switch.master_bedroom_switch"
+                                },
+                                {
+                                    "entity": "fan.master_fan"
+                                },
+                                {
+                                    "entity": "light.master_lamp"
+                                },
+                                {
+                                    "entity": "switch.outdoor_switch"
+                                },
+                                {
+                                    "entity": "switch.master_bathroom_switch"
+                                },
+                                {
+                                    "entity": "switch.master_shower_switch"
+                                },
+                                {
+                                    "entity": "light.master_toilet"
+                                }
+                            ],
+                            "title": "Master",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.kitchen_cans"
+                                },
+                                {
+                                    "entity": "light.kitchen_door"
+                                },
+                                {
+                                    "entity": "light.kitchen_pendents"
+                                },
+                                {
+                                    "entity": "light.dining_room"
+                                },
+                                {
+                                    "entity": "light.family_room1"
+                                }
+                            ],
+                            "title": "Downstairs",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "light.loft"
+                                },
+                                {
+                                    "entity": "light.upstairs_bathroom"
+                                },
+                                {
+                                    "entity": "switch.upstairs_main"
+                                }
+                            ],
+                            "title": "Upstairs",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "sensor.home_temperature"
+                                },
+                                {
+                                    "entity": "sensor.master_temperature"
+                                },
+                                {
+                                    "entity": "sensor.nursery_temperature"
+                                },
+                                {
+                                    "entity": "sensor.warner_temperature"
+                                },
+                                {
+                                    "entity": "sensor.home_humidity"
+                                }
+                            ],
+                            "title": "Temperature",
+                            "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.home_occupancy"
+                                },
+                                {
+                                    "entity": "binary_sensor.master_occupancy"
+                                },
+                                {
+                                    "entity": "binary_sensor.nursery_occupancy"
+                                },
+                                {
+                                    "entity": "binary_sensor.warner_occupancy"
+                                }
+                            ],
+                            "title": "Occupancy",
+                            "type": "glance"
+                        }
+                    ],
+                    "path": "lights",
+                    "title": "Lights"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                {
+                                    "entity": "lock.front_door"
+                                },
+                                {
+                                    "entity": "binary_sensor.front_door"
+                                },
+                                {
+                                    "entity": "camera.front_door"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Front Door",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "cover.garage_door"
+                            ],
+                            "show_header_toggle": false,
+                            "title": "Cover",
+                            "type": "entities"
+                        },
+                        {
+                            "entity": "weather.home",
+                            "type": "weather-forecast"
+                        },
+                        {
+                            "entity": "climate.home",
+                            "type": "thermostat"
+                        },
+                        {
+                            "entity": "sensor.dexcom",
+                            "graph": "line",
+                            "icon": "mdi:water",
+                            "name": "Dexcom",
+                            "type": "sensor",
+                            "unit": "mg/dL"
+                        }
+                    ],
+                    "path": "other",
+                    "title": "Other"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "light.kitchen_cans"
+                            ],
+                            "state_filter": [
+                                "on"
+                            ],
+                            "type": "entity-filter"
+                        },
+                        {
+                            "entities": [
+                                "sensor.temperature",
+                                "sensor.feels_like",
+                                "sensor.humidity",
+                                "sensor.pir",
+                                "light.led"
+                            ],
+                            "title": "Multisensor",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.processor_use",
+                                "sensor.load_1m",
+                                "sensor.load_5m",
+                                "sensor.load_15m",
+                                "sensor.memory_free"
+                            ],
+                            "title": "System Status",
+                            "type": "entities"
+                        }
+                    ],
+                    "icon": "mdi:settings",
+                    "title": "Debug"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}
