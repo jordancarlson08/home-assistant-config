@@ -42,6 +42,9 @@ recorder:
 history:
 logbook:
 logger:
+  default: warning
+  logs:
+    homeassistant.components.mqtt: debug
 map:
 
 nest:
@@ -103,16 +106,12 @@ light:
   - platform: mqtt
     schema: json
     name: "LED"  
-    state_topic: "multi/node1"  
-    command_topic: "multi/node1/set"  
+    state_topic: "multi/64CAEC/state"  
+    command_topic: "multi/64CAEC/set"  
     brightness: true  
     flash: true  
     rgb: true  
     optimistic: false  
-
-switch:
-  - platform: wake_on_lan
-    mac_address: "44-85-00-58-27-4E"
   
 sensor:
   - platform: command_line
@@ -122,24 +121,24 @@ sensor:
     scan_interval: 300
   
   - platform: mqtt  
-    state_topic: "multi/node1"  
+    state_topic: "multi/64CAEC/state"  
     name: "PIR"  
     value_template: '{{ value_json.motion }}'  
 
   - platform: mqtt  
-    state_topic: "multi/node1"  
+    state_topic: "multi/64CAEC/state"  
     name: "Temperature"  
     unit_of_measurement: "°F"  
     value_template: '{{ value_json.temperature | round(1) }}'
 
   - platform: mqtt
-    state_topic: "multi/node1"
+    state_topic: "multi/64CAEC/state"
     name: "Feels Like"
     unit_of_measurement: "°F"
     value_template: '{{ value_json.heatIndex | round(0) }}'
 
   - platform: mqtt  
-    state_topic: "multi/node1"  
+    state_topic: "multi/64CAEC/state"  
     name: "Humidity"  
     unit_of_measurement: "%"  
     value_template: '{{ value_json.humidity | round(0) }}'

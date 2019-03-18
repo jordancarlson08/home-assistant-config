@@ -1,13 +1,4 @@
 /*
-  .______   .______    __    __   __    __          ___      __    __  .___________.  ______   .___  ___.      ___   .___________. __    ______   .__   __.
-  |   _  \  |   _  \  |  |  |  | |  |  |  |        /   \    |  |  |  | |           | /  __  \  |   \/   |     /   \  |           ||  |  /  __  \  |  \ |  |
-  |  |_)  | |  |_)  | |  |  |  | |  |__|  |       /  ^  \   |  |  |  | `---|  |----`|  |  |  | |  \  /  |    /  ^  \ `---|  |----`|  | |  |  |  | |   \|  |
-  |   _  <  |      /  |  |  |  | |   __   |      /  /_\  \  |  |  |  |     |  |     |  |  |  | |  |\/|  |   /  /_\  \    |  |     |  | |  |  |  | |  . `  |
-  |  |_)  | |  |\  \-.|  `--'  | |  |  |  |     /  _____  \ |  `--'  |     |  |     |  `--'  | |  |  |  |  /  _____  \   |  |     |  | |  `--'  | |  |\   |
-  |______/  | _| `.__| \______/  |__|  |__|    /__/     \__\ \______/      |__|      \______/  |__|  |__| /__/     \__\  |__|     |__|  \______/  |__| \__|
-
-  Thanks much to @corbanmailloux for providing a great framework for implementing flash/fade with HomeAssistant https://github.com/corbanmailloux/esp-mqtt-rgb-led
-
   To use this code you will need the following dependancies: 
   
   - Support for the ESP8266 boards. 
@@ -19,15 +10,14 @@
       - Adafruit unified sensor
       - PubSubClient
       - ArduinoJSON
-	  
+    
   UPDATE 16 MAY 2017 by Knutella - Fixed MQTT disconnects when wifi drops by moving around Reconnect and adding a software reset of MCU
-	           
+             
   UPDATE 23 MAY 2017 - The MQTT_MAX_PACKET_SIZE parameter may not be setting appropriately do to a bug in the PubSub library. If the MQTT messages are not being transmitted as expected please you may need to change the MQTT_MAX_PACKET_SIZE parameter in "PubSubClient.h" directly.
 
 */
 
-
-
+#include <FS.h>
 #include <ESP8266WiFi.h>
 #include <DHT.h>
 #include <PubSubClient.h>
@@ -49,12 +39,29 @@
 #define mqtt_password "63sB2O8DKJmLWNRBqmQX"
 #define mqtt_port 1883
 
+char mqttServer[40];
+char mqttPortString[6];
+int mqttPort;
+char mqttUser[30];
+char mqttPassword[30];
 
 
-/************* MQTT TOPICS (change these topics as you wish)  **************************/
 #define light_state_topic "multi/node1"
 #define light_set_topic "multi/node1/set"
 #define temp_set_topic "multi/node1/offset"
+
+char sensorName[20] = "sensor1";
+char topicPrefix[6] = "multi";
+char stateTopic[6] = "state";
+char ligthTopic[4] = "set";
+char offsetTopic[7] = "offset";
+
+// example topic: multi/sensor1/state
+// example topic: multi/sensor1/set
+// example topic: multi/sensor1/offset
+
+//flag for saving data
+bool shouldSaveConfig = false;
 
 const char* on_cmd = "ON";
 const char* off_cmd = "OFF";
@@ -62,7 +69,7 @@ const char* off_cmd = "OFF";
 
 
 /**************************** FOR OTA **************************************************/
-#define SENSORNAME "node1"
+// #define sensorName "node1"
 #define OTApassword "63sB2O8DKJmLWNRBqmQX" // change this to whatever password you want to use when you upload OTA
 int OTAport = 8266;
 
@@ -154,27 +161,98 @@ void setup() {
   Serial.begin(115200);
   delay(10);
 
-  ArduinoOTA.setPort(OTAport);
+  //  Flash Chip ID: 1458415
+  //  Chip ID: 6605548
+  //  Mac Address: 60:01:94:64:CA:EC
+  // sensorName = "MultiSensor64CAEC"
 
-  ArduinoOTA.setHostname(SENSORNAME);
+  sprintf(sensorName, "MultiSensor%X", ESP.getChipId());
+  Serial.println(sensorName);
 
-  ArduinoOTA.setPassword((const char *)OTApassword);
+  readConfig();
 
-  Serial.print("calibrating sensor ");
-  for (int i = 0; i < calibrationTime; i++) {
-    Serial.print(".");
-    delay(1000);
+  // setupWifi();
+  // setConfigValues();
+  // saveConfig(shouldSaveConfig)
+
+  // force disconnect for testing
+  WiFi.disconnect();
+
+  WiFiManager wifiManager;
+
+  //set config save notify callback
+  wifiManager.setSaveConfigCallback(saveConfigCallback);
+
+  WiFiManagerParameter custom_mqtt_server("server", "mqtt server", mqttServer, 40);
+  wifiManager.addParameter(&custom_mqtt_server);
+
+  WiFiManagerParameter custom_mqtt_port("port", "mqtt port", mqttPortString, 6);
+  wifiManager.addParameter(&custom_mqtt_port);
+
+  WiFiManagerParameter custom_mqtt_user("user", "mqtt user", mqttUser, 20);
+  wifiManager.addParameter(&custom_mqtt_user);
+
+  WiFiManagerParameter custom_mqtt_password("password", "mqtt password", mqttPassword, 30);
+  wifiManager.addParameter(&custom_mqtt_password);
+
+  if (!wifiManager.autoConnect(sensorName, "multisensor")) {
+    Serial.println("failed to connect and hit timeout");
+    delay(3000);
+    //reset and try again, or maybe put it to deep sleep
+    ESP.reset();
+    delay(5000);
   }
 
-  Serial.println("Starting Node named " + String(SENSORNAME));
+    //read updated parameters
+  strcpy(mqttServer, custom_mqtt_server.getValue());
+  strcpy(mqttPortString, custom_mqtt_port.getValue());
+  strcpy(mqttUser, custom_mqtt_user.getValue());
+  strcpy(mqttPassword, custom_mqtt_password.getValue());
+
+    // Converts the char* to int
+  sscanf(mqttPortString, "%d", &mqttPort);
 
 
-  setup_wifi();
+  //save the custom parameters to FS
+  if (shouldSaveConfig) {
+    Serial.println("saving config");
+    DynamicJsonBuffer jsonBuffer;
+    JsonObject& json = jsonBuffer.createObject();
+    json["mqtt_server"] = mqttServer;
+    json["mqtt_port"] = mqttPortString;
+    json["mqtt_user"] = mqttUser;
+    json["mqtt_password"] = mqttPassword;
 
+    File configFile = SPIFFS.open("/config.json", "w");
+    if (!configFile) {
+      Serial.println("failed to open config file for writing");
+    }
+
+    json.printTo(Serial);
+    json.printTo(configFile);
+    configFile.close();
+    //end save
+  }
+
+
+
+  setupOTA();
+  setupMQTT();
+
+  reconnect();
+}
+
+
+
+void setupMQTT() {
   client.setServer(mqtt_server, mqtt_port);
   client.setCallback(callback);
+}
 
-
+void setupOTA() {
+  ArduinoOTA.setPort(OTAport);
+  ArduinoOTA.setHostname(sensorName);
+  ArduinoOTA.setPassword((const char *)OTApassword);
   ArduinoOTA.onStart([]() {
     Serial.println("Starting");
   });
@@ -193,43 +271,129 @@ void setup() {
     else if (error == OTA_END_ERROR) Serial.println("End Failed");
   });
   ArduinoOTA.begin();
-  Serial.println("Ready");
-  Serial.print("IPess: ");
-  Serial.println(WiFi.localIP());
-  reconnect();
 }
 
-
-
-
-/********************************** START SETUP WIFI*****************************************/
-void setup_wifi() {
-
-  WiFiManager wifiManager;
-  wifiManager.autoConnect("MultiSensorSetupAP", "multisensor");
-
-//  delay(10);
-//  Serial.println();
-//  Serial.print("Connecting to ");
-//  Serial.println(wifi_ssid);
-//
-//  WiFi.mode(WIFI_STA);
-//  WiFi.begin(wifi_ssid, wifi_password);
-//
-//  while (WiFi.status() != WL_CONNECTED) {
-//    delay(500);
-//    Serial.print(".");
-//  }
-//
-//  Serial.println("");
-//  Serial.println("WiFi connected");
-//  Serial.println("IP address: ");
-//  Serial.println(WiFi.localIP());
+/********************************** WIFI MANAGER SAVE CALLBACK *****************************************/
+void saveConfigCallback () {
+  Serial.println("Should save config");
+  shouldSaveConfig = true;
 }
 
+// void setupWifi() {
+
+//   Serial.println(); Serial.println();
+//   Serial.print("Connecting to ");
+
+//   // force disconnect for testing
+//   // WiFi.disconnect();
+
+//   WiFiManager wifiManager;
+
+//   //set config save notify callback
+//   wifiManager.setSaveConfigCallback(saveConfigCallback);
+
+//   WiFiManagerParameter custom_mqtt_server("server", "mqtt server", mqttServer, 40);
+//   wifiManager.addParameter(&custom_mqtt_server);
+
+//   WiFiManagerParameter custom_mqtt_port("port", "mqtt port", mqttPortString, 6);
+//   wifiManager.addParameter(&custom_mqtt_port);
+  
+//   WiFiManagerParameter custom_mqtt_user("user", "mqtt user", mqttUser, 20);
+//   wifiManager.addParameter(&custom_mqtt_user);
+
+//   WiFiManagerParameter custom_mqtt_password("password", "mqtt password", mqttPassword, 30);
+//   wifiManager.addParameter(&custom_mqtt_password);
+  
+//   if (!wifiManager.autoConnect(sensorName, "multisensor")) {
+//     Serial.println("failed to connect and hit timeout");
+//     delay(3000);
+//     //reset and try again, or maybe put it to deep sleep
+//     ESP.reset();
+//     delay(5000);
+//   }
+
+//   Serial.print("IP address: ");
+//   Serial.println(WiFi.localIP());
+// }
+
+// void saveConfig(bool shouldSaveConfig) {
+//   if (shouldSaveConfig) {
+//     Serial.println("saving config");
+//     DynamicJsonBuffer jsonBuffer;
+//     JsonObject& json = jsonBuffer.createObject();
+//     json["mqtt_server"] = mqttServer;
+//     json["mqtt_port"] = mqttPortString;
+//     json["mqtt_user"] = mqttUser;
+//     json["mqtt_password"] = mqttPassword;
+
+//     File configFile = SPIFFS.open("/config.json", "w");
+//     if (!configFile) {
+//       Serial.println("failed to open config file for writing");
+//     }
+
+//     json.printTo(Serial);
+//     json.printTo(configFile);
+//     configFile.close();
+//   }
+// }
+
+void readConfig () {
+  //clean FS, for testing
+  SPIFFS.format();
+
+  //read configuration from FS json
+  Serial.println("mounting FS...");
+
+  if (SPIFFS.begin()) {
+    Serial.println("mounted file system");
+    if (SPIFFS.exists("/config.json")) {
+      //file exists, reading and loading
+      Serial.println("reading config file");
+      File configFile = SPIFFS.open("/config.json", "r");
+      if (configFile) {
+        Serial.println("opened config file");
+        size_t size = configFile.size();
+        // Allocate a buffer to store contents of the file.
+        std::unique_ptr<char[]> buf(new char[size]);
+
+        configFile.readBytes(buf.get(), size);
+        DynamicJsonBuffer jsonBuffer;
+        JsonObject& json = jsonBuffer.parseObject(buf.get());
+        json.printTo(Serial);
+        if (json.success()) {
+          Serial.println("\nparsed json");
+
+          strcpy(mqttServer, json["mqtt_server"]);
+          strcpy(mqttPortString, json["mqtt_port"]);
+          strcpy(mqttUser, json["mqtt_user"]);
+          strcpy(mqttPassword, json["mqtt_password"]);
+
+        } else {
+          Serial.println("failed to load json config");
+        }
+        configFile.close();
+      }
+    }
+  } else {
+    Serial.println("failed to mount FS");
+  }
+  //end read
+}
+
+// void setConfigValues() {
+//       //read updated parameters
+//   strcpy(mqttServer, custom_mqtt_server.getValue());
+//   strcpy(mqttPortString, custom_mqtt_port.getValue());
+//   strcpy(mqttUser, custom_mqtt_user.getValue());
+//   strcpy(mqttPassword, custom_mqtt_password.getValue());
+
+//     // Converts the char* to int
+//   sscanf(mqttPortString, "%d", &mqttPort);
+// }
 
 
-/********************************** START CALLBACK*****************************************/
+
+/********************************** MQTT CALLBACK*****************************************/
 void callback(char* topic, byte* payload, unsigned int length) {
   Serial.print("Message arrived [");
   Serial.print(topic);
@@ -370,6 +534,7 @@ void sendState() {
   root["motion"] = (String)motionStatus;
   root["ldr"] = (String)LDR;
 
+  // Apply temperture calibration offset
   float offsetTemp = tempValue + tempOffset;
   
   root["temperature"] = (String)offsetTemp;
@@ -432,7 +597,7 @@ void reconnect() {
   while (!client.connected()) {
     Serial.print("Attempting MQTT connection...");
     // Attempt to connect
-    if (client.connect(SENSORNAME, mqtt_user, mqtt_password)) {
+    if (client.connect(sensorName, mqtt_user, mqtt_password)) {
       Serial.println("connected");
       client.subscribe(light_set_topic);
       client.subscribe(temp_set_topic);
