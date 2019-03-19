@@ -112,7 +112,15 @@ light:
     flash: true  
     rgb: true  
     optimistic: false  
-  
+
+input_number:
+  64CAEC_offset:
+    name: 64CAEC_offset
+    initial: 0
+    min: -15
+    max: 15
+    step: 0.1
+
 sensor:
   - platform: command_line
     name: Dexcom
