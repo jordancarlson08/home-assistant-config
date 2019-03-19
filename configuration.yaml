@@ -114,7 +114,7 @@ light:
     optimistic: false  
 
 input_number:
-  64CAEC_offset:
+  multi_offset:
     name: 64CAEC_offset
     initial: 0
     min: -15
