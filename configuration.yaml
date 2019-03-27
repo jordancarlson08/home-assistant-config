@@ -101,6 +101,13 @@ google_assistant:
     - fan
     - cover
 
+input_number:
+  multi_offset:
+    name: 64CAEC_offset
+    initial: 0
+    min: -15
+    max: 15
+    step: 0.1
 
 light:  
   - platform: mqtt
@@ -113,13 +120,16 @@ light:
     rgb: true  
     optimistic: false  
 
-input_number:
-  multi_offset:
-    name: 64CAEC_offset
-    initial: 0
-    min: -15
-    max: 15
-    step: 0.1
+  - platform: mqtt
+    schema: json
+    name: "Test LED"
+    state_topic: "multi/295637/state"
+    command_topic: "multi/295637/set"
+    brightness: true
+    flash: true
+    rgb: true
+    optimistic: false
+
 
 sensor:
   - platform: command_line
@@ -127,6 +137,14 @@ sensor:
     command: python3 ~/.homeassistant/scripts/dexcom.py
     unit_of_measurement: mg/dL
     scan_interval: 300
+
+  - platform: systemmonitor
+    resources:
+      - type: processor_use
+      - type: memory_free
+      - type: load_1m
+      - type: load_5m
+      - type: load_15m
   
   - platform: mqtt  
     state_topic: "multi/64CAEC/state"  
@@ -151,14 +169,29 @@ sensor:
     unit_of_measurement: "%"  
     value_template: '{{ value_json.humidity | round(0) }}'
 
-  - platform: systemmonitor
-    resources:
-      - type: processor_use
-      - type: memory_free
-      - type: load_1m
-      - type: load_5m
-      - type: load_15m
-  
+  - platform: mqtt
+    state_topic: "multi/295637/state"
+    name: "Test PIR"
+    value_template: '{{ value_json.motion }}'
+
+  - platform: mqtt
+    state_topic: "multi/295637/state"
+    name: "Test Temperature"
+    unit_of_measurement: "°F"
+    value_template: '{{ value_json.temperature | round(1) }}'
+
+  - platform: mqtt
+    state_topic: "multi/295637/state"
+    name: "Test Feels Like"
+    unit_of_measurement: "°F"
+    value_template: '{{ value_json.heatIndex | round(0) }}'
+
+  - platform: mqtt
+    state_topic: "multi/295637/state"
+    name: "Test Humidity"
+    unit_of_measurement: "%"
+    value_template: '{{ value_json.humidity | round(0) }}'
+
 
 
 

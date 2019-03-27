@@ -36,6 +36,16 @@ multisensor_1:
     - sensor.humidity
     - sensor.pir  
     - light.led
+
+test_multisensor:
+  name: Test Multisensor
+  entities:
+    - sensor.test_temperature
+    - sensor.test_feels_like
+    - sensor.test_humidity
+    - sensor.test_pir  
+    - light.test_led
+
 system:
   name: System Status
   entities:
