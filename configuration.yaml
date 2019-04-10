@@ -42,7 +42,7 @@ recorder:
 history:
 logbook:
 logger:
-  default: warning
+  default: debug
   logs:
     homeassistant.components.mqtt: debug
 map:
@@ -85,7 +85,7 @@ camera:
   - platform: generic
     still_image_url: https://i.imgur.com/eOSai4B.png
     stream_source: rtsp://192.168.1.101:7447/5ca7d30490082626309d821e_0
-    verify_ssl: false
+    verify_ssl: false 
 
 
 device_tracker:
@@ -124,7 +124,6 @@ light:
     state_topic: "multi/64CAEC/state"  
     command_topic: "multi/64CAEC/set"  
     brightness: true  
-    flash: true  
     rgb: true  
     optimistic: false  
 
@@ -134,7 +133,6 @@ light:
     state_topic: "multi/295637/state"
     command_topic: "multi/295637/set"
     brightness: true
-    flash: true
     rgb: true
     optimistic: false
 
@@ -144,7 +142,6 @@ light:
     state_topic: "multi/2960C1/state"
     command_topic: "multi/2960C1/set"
     brightness: true
-    flash: true
     rgb: true
     optimistic: false
 
