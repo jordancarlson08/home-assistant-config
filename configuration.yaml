@@ -79,6 +79,14 @@ ecobee:
 #     host: '192.168.0.95'
 #     password: my_password_123
 
+stream:
+
+camera:
+  - platform: generic
+    still_image_url: https://i.imgur.com/eOSai4B.png
+    stream_source: rtsp://192.168.1.101:7447/5ca7d30490082626309d821e_0
+    verify_ssl: false
+
 
 device_tracker:
   - platform: google_maps
