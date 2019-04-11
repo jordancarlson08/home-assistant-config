@@ -25,7 +25,7 @@ http:
 
 updater:
 discovery:
-
+system_health:
 recorder:
   purge_interval: 2
   purge_keep_days: 3
@@ -84,7 +84,7 @@ stream:
 camera:
   - platform: generic
     still_image_url: http://192.168.1.101:7080/api/2.0/snapshot/camera/5ca7d30490082626309d821e?force=true&apiKey=vtf9PVKJL2yTAiqi2NYP6CJvISWqHUQM
-    stream_source: rtsp://192.168.1.101:7447/5ca7d30490082626309d821e_2
+    stream_source: rtsp://192.168.1.101:7080/5ca7d30490082626309d821e_2
 
 
 device_tracker:
