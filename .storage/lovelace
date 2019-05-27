@@ -107,6 +107,14 @@
                             ],
                             "title": "Occupancy",
                             "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "camera.generic_camera"
+                                }
+                            ],
+                            "type": "entities"
                         }
                     ],
                     "path": "lights",
@@ -164,12 +172,27 @@
                     "cards": [
                         {
                             "entities": [
-                                "light.kitchen_cans"
+                                "sensor.test_temperature",
+                                "sensor.test_feels_like",
+                                "sensor.test_humidity",
+                                "sensor.test_pir",
+                                "light.test_led"
                             ],
-                            "state_filter": [
-                                "on"
+                            "show_header_toggle": false,
+                            "title": "Test Multisensor",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "sensor.test_2_temperature",
+                                "sensor.test_2_feels_like",
+                                "sensor.test_2_humidity",
+                                "sensor.test_2_pir",
+                                "light.test_2_led"
                             ],
-                            "type": "entity-filter"
+                            "show_header_toggle": false,
+                            "title": "Test 2 Multisensor",
+                            "type": "entities"
                         },
                         {
                             "entities": [
@@ -179,8 +202,25 @@
                                 "sensor.pir",
                                 "light.led"
                             ],
+                            "show_header_toggle": false,
                             "title": "Multisensor",
                             "type": "entities"
+                        }
+                    ],
+                    "path": "sensors",
+                    "title": "Sensors"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entities": [
+                                "light.kitchen_cans"
+                            ],
+                            "state_filter": [
+                                "on"
+                            ],
+                            "type": "entity-filter"
                         },
                         {
                             "entities": [
@@ -191,6 +231,16 @@
                                 "sensor.memory_free"
                             ],
                             "title": "System Status",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "input_number.multi_offset"
+                                }
+                            ],
+                            "show_header_toggle": false,
+                            "title": "MultiSensor Offsets",
                             "type": "entities"
                         }
                     ],

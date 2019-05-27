@@ -603,6 +603,15 @@
                 "name": "Master Toilet",
                 "platform": "zwave",
                 "unique_id": "20-72057594378289153"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.home_group_2",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "aadf3d59-8fe4-4046-b17a-742efefa88b6"
             }
         ]
     },

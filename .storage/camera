@@ -1,0 +1,9 @@
+{
+    "data": {
+        "camera.generic_camera": {
+            "preload_stream": false
+        }
+    },
+    "key": "camera",
+    "version": 1
+}

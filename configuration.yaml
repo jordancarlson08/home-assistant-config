@@ -52,7 +52,8 @@ nest:
   client_secret: !secret nest_client_secret
 
 tts:
-  - platform: google
+  - platform: google_translate
+    service_name: google_say
 
 notify:
   - platform: html5
