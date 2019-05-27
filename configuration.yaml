@@ -59,7 +59,7 @@ notify:
     name: NOTIFIER_NAME
     vapid_pub_key: !secret vapid_pub_key
     vapid_prv_key: !secret vapid_prv_key
-    vapid_email: YOUR_EMAIL
+    vapid_email: jordancarlson08@gmail.com
     # gcm_api_key: !secret gcm_api_key
     # gcm_sender_id: !secret gcm_sender_id
 
