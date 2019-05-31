@@ -15,6 +15,7 @@ group: !include groups.yaml
 
 lovelace:
 frontend:
+  javascript_version: latest
 config:
 
 http:
