@@ -92,6 +92,10 @@ camera:
     stream_source: rtsp://192.168.1.101:7447/5ca7d30490082626309d821e_0
     # stream_source: rtsp://192.168.1.101:7447/5ca7d30490082626309d821e_2
 
+  - platform: generic
+    stream_source: rtsp://192.168.2.14/ch0_1.h264
+    
+
 
 device_tracker:
   - platform: google_maps
