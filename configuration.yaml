@@ -96,7 +96,8 @@ camera:
     name: kitchen-cam
     input: -rtsp_transport tcp -i rtsp://192.168.2.10/ch0_1.h264
 
-  - platform: warner-cam
+  - platform: generic
+    name: warner-cam
     still_image_url: http://192.168.1.101:7080/api/2.0/snapshot/camera/5ca7d30490082626309d821e?force=true&apiKey=vtf9PVKJL2yTAiqi2NYP6CJvISWqHUQM
     stream_source: rtsp://192.168.1.101:7447/5ca7d30490082626309d821e_0
 
