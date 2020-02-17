@@ -1,4 +1,4 @@
-.HA_VERSION
+\.HA_VERSION
 .uuid
 OZW_Log.txt
 configuration.yaml.save
@@ -12,4 +12,5 @@ zwscene.xml
 add_confs/shell_commands/__pycache__/
 secrets.yaml
 options.xml
+.DS_Store
 
