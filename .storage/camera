@@ -2,6 +2,18 @@
     "data": {
         "camera.generic_camera": {
             "preload_stream": false
+        },
+        "camera.kitchen_cam": {
+            "preload_stream": true
+        },
+        "camera.warner_cam": {
+            "preload_stream": true
+        },
+        "camera.winnie_cam": {
+            "preload_stream": true
+        },
+        "camera.yi_hack_v4": {
+            "preload_stream": true
         }
     },
     "key": "camera",

@@ -1,0 +1,5 @@
+sudo certbot -d home.jordancarlson.me --manual --preferred-challenges dns certonly
+
+add TXT to namecheap dns (advanced dns tab)
+
+test using https://mxtoolbox.com/TXTLookup.aspx

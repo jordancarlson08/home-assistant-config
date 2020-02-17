@@ -64,6 +64,9 @@
                                 },
                                 {
                                     "entity": "switch.upstairs_main"
+                                },
+                                {
+                                    "entity": "light.laundry"
                                 }
                             ],
                             "title": "Upstairs",
@@ -107,18 +110,32 @@
                             ],
                             "title": "Occupancy",
                             "type": "glance"
-                        },
-                        {
-                            "entities": [
-                                {
-                                    "entity": "camera.generic_camera"
-                                }
-                            ],
-                            "type": "entities"
                         }
                     ],
                     "path": "lights",
                     "title": "Lights"
+                },
+                {
+                    "badges": [],
+                    "cards": [
+                        {
+                            "entity": "camera.winnie_cam",
+                            "name": "Winnie",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.warner_cam",
+                            "name": "Warner",
+                            "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.kitchen_cam",
+                            "name": "Kitchen",
+                            "type": "picture-entity"
+                        }
+                    ],
+                    "icon": "mdi:cctv",
+                    "title": "Cameras"
                 },
                 {
                     "badges": [],

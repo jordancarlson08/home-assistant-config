@@ -2,6 +2,7 @@
     "data": {
         "devices": [
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -17,9 +18,11 @@
                 "manufacturer": "NVIDIA",
                 "model": "SHIELD Android TV",
                 "name": "SHIELD",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -35,9 +38,11 @@
                 "manufacturer": "Google Inc.",
                 "model": "Google Home",
                 "name": "Family Room Home",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -53,9 +58,11 @@
                 "manufacturer": "Google Inc.",
                 "model": "Google Home Mini",
                 "name": "Loft Wall",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -71,9 +78,11 @@
                 "manufacturer": "Google Inc.",
                 "model": "Google Home",
                 "name": "Front Speaker",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -89,9 +98,11 @@
                 "manufacturer": "Google Inc.",
                 "model": "Google Home Mini",
                 "name": "Master Speaker",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -107,9 +118,11 @@
                 "manufacturer": "VIZIO",
                 "model": "SmartCast Sound Bar 4051-D5",
                 "name": "Soundbar",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -125,9 +138,11 @@
                 "manufacturer": "",
                 "model": "AirScreen",
                 "name": "ShieldTV[Cast]",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -143,9 +158,11 @@
                 "manufacturer": "Linear",
                 "model": "PD300Z-2 Plug-in Dimmer Module",
                 "name": "Master Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -161,9 +178,11 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WS100+ Wall Switch",
                 "name": "Master Light",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -179,9 +198,11 @@
                 "manufacturer": "Aeotec",
                 "model": "ZW089 Recessed Door Sensor Gen5",
                 "name": "Aeotec ZW089 Recessed Door Sensor Gen5",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -197,9 +218,11 @@
                 "manufacturer": "GE",
                 "model": "12722 On/Off Relay Switch",
                 "name": "GE 12722 On/Off Relay Switch",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -215,9 +238,11 @@
                 "manufacturer": "GE",
                 "model": "12730 Fan Control Switch",
                 "name": "GE 12730 Fan Control Switch",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -233,9 +258,11 @@
                 "manufacturer": "GE",
                 "model": "12722 On/Off Relay Switch",
                 "name": "GE 12722 On/Off Relay Switch",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -251,9 +278,11 @@
                 "manufacturer": "GE",
                 "model": "12722 On/Off Relay Switch",
                 "name": "GE 12722 On/Off Relay Switch",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -269,9 +298,11 @@
                 "manufacturer": "GE",
                 "model": "12720 Outdoor Smart Switch",
                 "name": "GE 12720 Outdoor Smart Switch",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -285,11 +316,13 @@
                     ]
                 ],
                 "manufacturer": "Google Inc.",
-                "model": "Google Home Hub",
+                "model": "Google Nest Hub",
                 "name": "Kitchen display",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -305,9 +338,11 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -323,9 +358,11 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -341,9 +378,11 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -359,9 +398,11 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -377,9 +418,11 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -395,9 +438,11 @@
                 "manufacturer": "Kwikset",
                 "model": "Touchpad Electronic Deadbolt",
                 "name": "Kwikset Touchpad Electronic Deadbolt",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -413,9 +458,11 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "5fec18f62dc24f6689214a35da025c01"
                 ],
@@ -431,9 +478,11 @@
                 "manufacturer": "Nest Labs",
                 "model": "Structure",
                 "name": "Home",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "5fec18f62dc24f6689214a35da025c01"
                 ],
@@ -449,9 +498,11 @@
                 "manufacturer": "Nest Labs",
                 "model": "Camera",
                 "name": "Front Door Camera",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -467,9 +518,11 @@
                 "manufacturer": "",
                 "model": "AirScreen",
                 "name": "ShieldTV[Cast]",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -485,9 +538,11 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "e107d2a4b91b44fc95612c754b2cc5b8"
                 ],
@@ -500,12 +555,14 @@
                         "4831de6aa6ae7b3a6e8506c09c75203c"
                     ]
                 ],
-                "manufacturer": "Xiaomi",
+                "manufacturer": "Unknown manufacturer",
                 "model": "MIBOX3",
                 "name": "MIBOX3",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -521,9 +578,11 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             },
             {
+                "area_id": null,
                 "config_entries": [
                     "2b5e5e0e784545a0b431c3b5952fdaeb"
                 ],
@@ -539,6 +598,67 @@
                 "manufacturer": "HomeSeer",
                 "model": "HS-WD100+ Wall Dimmer",
                 "name": "HomeSeer HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "812b5c89f93f40fd87d93c0c6afb23ac",
+                "identifiers": [
+                    [
+                        "cast",
+                        "a679feb62fb9519040cb6f5394fa83cd"
+                    ]
+                ],
+                "manufacturer": "",
+                "model": "AirScreen",
+                "name": "ShieldTV[Cast]",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "e107d2a4b91b44fc95612c754b2cc5b8"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "9d12fdb1ef0e41fa943bfdef3eb857d3",
+                "identifiers": [
+                    [
+                        "cast",
+                        "78d52fd462ce6c9f23e8eea3e195a175"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "SHIELD Android TV",
+                "name": "SHIELD",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "2b5e5e0e784545a0b431c3b5952fdaeb"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "745e59a9cc994b4b80062abd58e18310",
+                "identifiers": [
+                    [
+                        "zwave",
+                        21
+                    ]
+                ],
+                "manufacturer": "HomeSeer Technologies",
+                "model": "HS-WD100+ Wall Dimmer",
+                "name": "HomeSeer Technologies HS-WD100+ Wall Dimmer",
+                "name_by_user": null,
                 "sw_version": null
             }
         ]

@@ -612,6 +612,42 @@
                 "name": null,
                 "platform": "cast",
                 "unique_id": "aadf3d59-8fe4-4046-b17a-742efefa88b6"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "812b5c89f93f40fd87d93c0c6afb23ac",
+                "disabled_by": null,
+                "entity_id": "media_player.shieldtv_cast",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "a679feb6-2fb9-5190-40cb-6f5394fa83cd"
+            },
+            {
+                "config_entry_id": "e107d2a4b91b44fc95612c754b2cc5b8",
+                "device_id": "9d12fdb1ef0e41fa943bfdef3eb857d3",
+                "disabled_by": null,
+                "entity_id": "media_player.shield_2",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "78d52fd4-62ce-6c9f-23e8-eea3e195a175"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "zwave.homeseer_technologies_hs_wd100_wall_dimmer",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-21"
+            },
+            {
+                "config_entry_id": "2b5e5e0e784545a0b431c3b5952fdaeb",
+                "device_id": "745e59a9cc994b4b80062abd58e18310",
+                "disabled_by": null,
+                "entity_id": "light.laundry",
+                "name": "Laundry Light",
+                "platform": "zwave",
+                "unique_id": "21-72057594395066369"
             }
         ]
     },
