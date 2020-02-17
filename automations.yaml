@@ -1,4 +1,5 @@
 - alias: DD Kitchen
+  id: 2f922ecc5092440e8d0d964d2a96e9a1
   trigger:
   - event_data:
       node_id: 12
@@ -17,6 +18,7 @@
       entity_id: light.master_toilet
     service: light.turn_off
 - alias: TD Kitchen
+  id: 2f922ecc5092440e8d0d964d2a96e9a2
   trigger:
     platform: event
     event_type: zwave.scene_activated
