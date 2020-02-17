@@ -1,5 +1,5 @@
-- alias: DD Kitchen
-  id: 2f922ecc5092440e8d0d964d2a96e9a1
+- id: 2f922ecc5092440e8d0d964d2a96e9a1
+  alias: DD Kitchen
   trigger:
   - event_data:
       node_id: 12
@@ -9,13 +9,13 @@
     platform: event
   action:
   - data:
-      entity_id: switch.master_bathroom_switch
-    service: switch.turn_off
+      entity_id: light.kitchen_cans
+    service: light.turn_off
   - data:
-      entity_id: switch.master_shower_switch
-    service: switch.turn_off
+      entity_id: light.kitchen_door
+    service: light.turn_off
   - data:
-      entity_id: light.master_toilet
+      entity_id: light.kitchen_pendents
     service: light.turn_off
 - alias: TD Kitchen
   id: 2f922ecc5092440e8d0d964d2a96e9a2
