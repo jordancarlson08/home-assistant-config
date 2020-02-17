@@ -14,6 +14,7 @@
   alias: Double Tap Down
   trigger:
   - event_data:
+      node_id: 3
       scene_data: 3
       scene_id: 2
     event_type: zwave.scene_activated
