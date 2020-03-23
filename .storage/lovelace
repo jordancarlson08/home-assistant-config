@@ -110,6 +110,14 @@
                             ],
                             "title": "Occupancy",
                             "type": "glance"
+                        },
+                        {
+                            "entities": [
+                                {
+                                    "entity": "automation.td_kitchen"
+                                }
+                            ],
+                            "type": "entities"
                         }
                     ],
                     "path": "lights",
