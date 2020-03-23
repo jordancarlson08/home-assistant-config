@@ -102,7 +102,7 @@ camera:
     stream_source: rtsp://192.168.1.101:7447/5ca7d30490082626309d821e_0
 
   - platform: mjpeg
-    mjpeg_url: http://192.168.1.133/mjpeg.cgi
+    mjpeg_url: http://192.168.1.133/video/mjpg.cgi
     name: basement-cam-mjpeg
 
   - platform: generic
