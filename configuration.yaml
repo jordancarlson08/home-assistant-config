@@ -98,6 +98,7 @@ camera:
 
   - platform: generic
     name: warner-cam
+    still_image_url: http://127.0.0.1:8123/local/warner_cam.png
     stream_source: rtsp://192.168.1.1:7447/F8A8x0hfVCro0cFZ
 
   - platform: mjpeg
