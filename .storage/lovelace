@@ -140,6 +140,11 @@
                             "entity": "camera.kitchen_cam",
                             "name": "Kitchen",
                             "type": "picture-entity"
+                        },
+                        {
+                            "entity": "camera.basement_cam_mjpeg",
+                            "name": "Warner",
+                            "type": "picture-entity"
                         }
                     ],
                     "icon": "mdi:cctv",
