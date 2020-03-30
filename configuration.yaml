@@ -90,7 +90,7 @@ ffmpeg:
 camera:
   - platform: ffmpeg
     name: winnie-cam
-    input: -rtsp_transport tcp -i rtsp://192.168.2.14/ch0_1.h264
+    input: -rtsp_transport tcp -i rtsp://192.168.2.188/ch0_1.h264
 
   - platform: ffmpeg
     name: kitchen-cam
