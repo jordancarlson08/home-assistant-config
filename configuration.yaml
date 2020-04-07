@@ -89,7 +89,7 @@ stream:
 ffmpeg:
 camera:
   - platform: ffmpeg
-    name: winnie-cam
+    name: winnie-cam-old
     input: -rtsp_transport tcp -i rtsp://192.168.2.188/ch0_1.h264
 
   - platform: ffmpeg
@@ -100,6 +100,11 @@ camera:
     name: warner-cam
     still_image_url: https://i.imgur.com/oV5pPHZ.jpg
     stream_source: rtsp://192.168.1.1:7447/F8A8x0hfVCro0cFZ
+
+  - platform: generic
+    name: winnie-cam
+    still_image_url: https://i.imgur.com/oV5pPHZ.jpg
+    stream_source: rtsp://192.168.1.1:7447/cpgEaHpUuJVJltC1
 
   - platform: mjpeg
     still_image_url: http://192.168.1.133/Image.jpg
